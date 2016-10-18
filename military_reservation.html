@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>智慧高校 - 军服预定</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/military_reservation.js"></script>
+<script type="text/javascript" src="mui/mui.min.js"></script>
+</head>
+
+<body>
+<div class="wrap_header transition">
+  <span class="jt mui-action-back"></span>
+  <span>军服预定</span>
+</div>
+<div class="wrap_header transition" style="left:100%">
+  <span class="jt"></span>
+  <span></span>
+</div>
+
+<article class="page">
+  <section class="wrap h100">
+    
+    <!--主体-->
+    <div class="military_reservation_school_plan h100">
+      <div class="school_plan over_scroll">
+        <ul class="school_plan1 military_reservation">
+          <li id="military_reservation_height">
+            <span>身高(cm)</span>
+            <input id="身高" class="for_get" type="text" placeholder="请输入身高" value="1"/>
+          </li>
+          <div class="warning" style="display:none;">请输入正确的身高（如：170.25）</div>
+          <li id="military_reservation_weight">
+            <span>体重(kg)</span>
+            <input id="体重" class="for_get" type="text" placeholder="请输入体重" value="1"/>
+          </li>
+          <div class="warning" style="display:none;">请输入正确的体重（如：50.25）</div>
+          <li id="military_reservation_hat">
+            <span>帽型</span>
+            <strong id="帽型" class="for_get"></strong>
+            <em></em>
+          </li>
+          <li id="military_reservation_shoe">
+            <span>鞋码</span>
+            <strong id="鞋码" class="for_get"></strong>
+            <em></em>
+          </li>
+          <li id="military_reservation_uniform">
+            <span>军服号型</span>
+            <strong id="军服号型" class="for_get"></strong>
+            <em></em>
+          </li>
+          <li id="military_reservation_shirt">
+            <span>汗衫</span>
+            <strong id="汗衫" class="for_get"></strong>
+            <em></em>
+          </li>
+          <li id="military_reservation_text">
+            <textarea rows="3 " placeholder="特殊情况说明" id="备注" class="for_get"></textarea>
+            <p id="word-counter"><em id="word-count">0</em>/400</p>
+          </li>
+        </ul>
+        <a id="save_button" href="javascript:;">保存修改</a>
+      </div>
+      
+      <div class="school_plan over_scroll" style="left:100%">
+        <ul class="school_plan2 military_reservation_hat">
+        </ul>
+      </div>
+      
+      <div class="school_plan over_scroll" style="left:100%">
+        <ul class="school_plan2 military_reservation_shoe">
+        </ul>
+      </div>
+      
+      <div class="school_plan over_scroll" style="left:100%">
+        <ul class="school_plan2 military_reservation_uniform">
+        </ul>
+      </div>
+      
+      <div class="school_plan over_scroll" style="left:100%">
+        <ul class="school_plan2 military_reservation_shirt">
+        </ul>
+      </div>
+    </div>
+
+  </section>
+</article>+
+<div id="save_success" style="display: none">保存成功</div>
+</body>
+</html>

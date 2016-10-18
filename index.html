@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>智慧高校</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="mui/mui.min.js" ></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/content_width.js"></script>
+</head>
+ 
+<body>
+<article class="page">
+  <section class="wrap">
+    <div class="wrap_header">
+      <span>智慧高校</span>
+    </div>
+    
+    <!--主体-->
+    <div class="index">
+      <!--banner-->
+      <div class="banner">
+        <div id="mySwipe" class="index_swipe">
+          <div class="index_swipe_co" style="width: 100%">
+            <div class="wrap">
+              <a>
+                <img src="images/load.png">
+              </a>
+            </div>
+            <div class="wrap">
+              <a>
+                <img src="images/load.png">
+              </a>
+            </div>
+            <div class="wrap">
+              <a>
+                <img src="images/load.png">
+              </a>
+            </div>
+            <div class="wrap">
+              <a>
+                <img src="images/load.png">
+              </a>
+            </div>
+            <div class="wrap">
+              <a>
+                <img src="images/load.png">
+              </a>
+            </div>
+            <div class="wrap">
+              <a>
+                <img src="images/load.png">
+              </a>
+            </div>
+          </div>
+        </div>
+        <p id="ms-position">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </p>
+      </div>
+      <!--banner end-->
+      
+      <!--导航-->
+      <nav>
+        <ul>
+          <li>
+            <a id="bateHall">
+              <img src="images/load.png" data-echo="images/index_xsyx.png" />
+              <span>学生迎新</span>
+            </a>
+          </li>
+          <li>
+            <a id="logistics">
+              <img src="images/load.png" data-echo="images/index_hqfw.png" />
+              <span>后勤服务</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/load.png" data-echo="images/index_kqqd.png" />
+              <span>考勤签到</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/load.png" data-echo="images/index_wdkc.png" />
+              <span>我的课程</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/load.png" data-echo="images/index_sshd.png" />
+              <span>师生互动</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/load.png" data-echo="images/index_zsjy.png" />
+              <span>招生就业</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+            <img src="images/load.png" data-echo="images/index_qyzp.png" />
+            <span>企业招聘</span>
+          </a>
+          </li>
+          <li>
+            <a id="edu_index">
+              <img src="images/load.png" data-echo="images/index_jwxt.png" />
+              <span>教务系统</span>
+            </a>
+           <!--  <a>
+              <img src="images/load.png" data-echo="images/index_jwxt.png" />
+              <span>教务系统</span>
+            </a> -->
+          </li>
+          <li>
+            <a href="javascript:;">
+            <img src="images/load.png" data-echo="images/index_ykt.png" />
+            <span>一卡通</span>
+          </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <img src="images/load.png" data-echo="images/index_oa.png" />
+              <span>移动OA</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--导航 end-->
+      
+      <!--校园活动-->
+      <div class="lowest_price">
+        <h2><em></em>校园活动</h2>
+        <div class="lowest_price_co">
+        </div>
+      </div>
+      <!--校园活动 end-->
+      
+      <!--高校动态-->
+      <div class="lowest_price">
+        <h2><em></em>高校动态</h2>
+        <ul class="university_dynamic">
+        </ul>
+        <div class="nav_div"></div>
+      </div>
+      <!--高校动态 end-->
+    </div>
+    
+    <!--主体 end-->
+    
+    <footer>
+      <a class="active" href="index.html">
+        <em></em>
+        <span>主页</span>
+      </a>
+      <a href="message.html">
+        <em></em>
+        <span>消息</span>
+      </a>
+      <a id="contact">
+        <em></em>
+        <span>通讯录</span>
+      </a>
+      <a id="my">
+        <em></em>
+        <span>我的</span>
+      </a>
+    </footer>
+  </section>
+</article>
+<div id="save_success" style="display: none">网站建设中</div>
+<script src="js/echo.min.js"></script>
+<script>
+	echo.init();
+
+	document.getElementById('bateHall').addEventListener('tap', function() {
+    if(lqNo){
+      openWindow('student_orientation.html')
+    } else {
+      openWindow('login.html')
+    }
+	});
+	document.getElementById('logistics').addEventListener('tap', function() {
+    if(lqNo){
+      openWindow('realservice/index-service.html');
+    } else {
+      openWindow('login.html')
+    }
+  });
+  document.getElementById('edu_index').addEventListener('tap', function() {
+    if(lqNo){
+      openWindow('educational/edu_index.html');
+    } else {
+      openWindow('login.html')
+    }
+  });
+  $('nav a').not($('nav a[id]')).on('tap', function(){
+    saveSuccess('网站建设中')
+  })
+  document.getElementById('contact').addEventListener('tap', function() {
+    if(lqNo){
+      window.location.href = 'contact.html'
+    } else {
+      openWindow('login.html')
+    }
+  });
+  document.getElementById('my').addEventListener('tap', function() {
+    if(lqNo){
+      window.location.href = 'my.html'
+    } else {
+      openWindow('login.html')
+    }
+  });
+
+</script>
+</body>
+</html>

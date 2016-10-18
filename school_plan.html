@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>智慧高校 - 到校计划</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/school_plan.js"></script>
+
+<!-- mui日期选择器 -->
+<script type="text/javascript" src='mui/mui.min.js'></script>
+<script type="text/javascript" src='mui/mui.picker.min.js'></script>
+<link rel="stylesheet" type="text/css" href="mui/mui.picker.min.css">
+</head>
+
+<body>
+<div class="wrap_header">
+  <span class="jt mui-action-back"></span>
+  <span>到校计划</span>
+</div>
+<div class="wrap_header" style="left:100%">
+  <span class="jt"></span>
+  <span>站点选择</span>
+</div>
+
+<article class="page">
+  <section class="wrap h100">
+    
+    
+    <!--主体-->
+    <div class="wrap_school_plan h100">
+      <div class="school_plan over_scroll">
+        <ul class="school_plan1">
+          <li id="is_station">
+            <span>是否需要接站</span>
+            <a href="javascript:;"><em></em>是</a>
+            <a href="javascript:;"><em></em>否</a>
+          </li>
+          <li id="arrival_type">
+            <span>到校方式</span>
+            <a href="javascript:;"><em></em>自驾车</a>
+            <a href="javascript:;"><em></em>公共交通</a>
+          </li>
+          <li id="expected_arrive_time">
+            <span>到达时间</span>
+            <input type="text" placeholder="请输入预计到达时间 " readonly="readonly" />
+          </li>
+          <li id="train_num">
+            <span>乘坐车次号</span>
+            <input type="text" placeholder="请输入预计到达时间 " />
+          </li>
+          <li id="accompany_num">
+            <span>陪同人数</span>
+            <input type="text" placeholder="请输入陪同人数" />
+          </li>
+          <li id="is_hotel">
+            <span>是否安排住宿</span>
+            <a href="javascript:;"><em></em>是</a>
+            <a href="javascript:;"><em></em>否</a>
+          </li>
+          <li id="arrived_site">
+            <span>到达站点</span>
+            <strong>杭州火车城站</strong>
+            <em></em>
+          </li>
+          <li id="express_num">
+            <span>快递单号</span>
+            <input type="text" name="" placeholder="请输入代收快递单号"></input>
+          </li>
+          <li class="attention">快递单号请使用格式（申通快递：14444444），多个快递单号请使用逗号（，）隔开</li>
+          <li id="military_reservation_text">
+            <textarea id="remark" cols="40" rows="3" placeholder="特殊情况说明（限输入400字）"></textarea>
+            <p id="word-counter"><em id="word-count">0</em>/400</p>
+          </li>
+        </ul>
+        <a id="save_button" href="javascript:;">保存修改</a>
+      </div>
+      
+      <div class="school_plan over_scroll" style="left: 100%;">
+        <ul class="school_plan2">
+          <li>
+            <a href="javascript:;">
+              <span>站点</span>
+              <strong>杭州火车城站</strong>
+              <em></em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <span>站点</span>
+              <strong>杭州火车东站</strong>
+              <em></em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <span>站点</span>
+              <strong>杭州汽车客运中心</strong>
+              <em></em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <span>站点</span>
+              <strong>汽车南站</strong>
+              <em></em>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <span>站点</span>
+              <strong>萧山机场</strong>
+              <em></em>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+</article>
+<div id="save_success" style="display: none">保存成功</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			.mui-toast-container {
+				margin-bottom: 20px;
+			}
+			
+			.mui-col-xs-3 {
+				color: #8A6DE9;
+			}
+			
+			header.mui-bar {
+				background-color: #009FFF;
+			}
+			
+			header>a,
+			h1.mui-title {
+				color: #FFFFFF;
+			}
+			.mui-col-xs-9>li{padding: 0 10px;}
+			.mui-col-xs-9>.mui-radio{padding: 10px;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">临时住宿申请</h1>
+		</header>
+
+		<div class="mui-content">
+
+			<form style="background-color: #efeff4;">
+				<div class="mui-table mui-input-group" style="padding:1px 5px;background-color: #FFFFFF;margin: 10px 0;">
+					<h4 class="mui-table-cell mui-col-xs-3">个人信息</h4>
+					<ul class="mui-table-view mui-table-cell mui-col-xs-9">
+						<li class="mui-table-view-cell">
+							<input name="name" type="text" class="mui-input-clear" placeholder="姓名">
+						</li>
+						<li class="mui-table-view-cell mui-radio mui-left">
+							<input name="radio" type="radio" value="男" checked="checked">男
+							
+						</li>
+						<li class="mui-table-view-cell mui-radio mui-left">
+							
+							<input name="radio" type="radio" value="女">女
+						</li>
+						<li class="mui-table-view-cell">
+							<input name="idcard" type="text" class="mui-input-clear" placeholder="身份证号">
+						</li>
+						<li class="mui-table-view-cell">
+							<input name="mobile" type="text" class="mui-input-clear" placeholder="联系方式">
+						</li>
+					</ul>
+				</div>
+				<div class="mui-table mui-input-group" style="padding:2px 5px;background-color: #FFFFFF;margin:10px 0;">
+					<h4 class="mui-table-cell mui-col-xs-3">住宿选项</h4>
+					<ul class="mui-table-view mui-table-cell mui-col-xs-9">
+						<li class="mui-table-view-cell mui-radio mui-left">
+							<input name="radio1" type="radio" value="零星住宿" checked="checked">零星住宿
+						</li>
+
+						<li class="mui-table-view-cell mui-radio mui-left">
+							<input name="radio1" type="radio" value="进修住宿">进修住宿
+						</li>
+
+						<li class="mui-table-view-cell" style="padding: 10px 0;">
+							<input type="text" class="mui-input-clear" placeholder="入住时间" id="timein" style="padding: 10px 0;"/>
+						</li>
+						<li class="mui-table-view-cell" style="padding: 10px 0;">
+							<input type="text" class="mui-input-clear" placeholder="退宿时间" id="timeout" style="padding: 10px 0;"/>
+						</li>
+					</ul>
+					<!--<div class=" mui-table-cell mui-col-xs-9">
+	            	
+	            	<input type="text" class="mui-input-clear" placeholder="姓名">
+	        	</div>
+	        	
+	        	<div class=" mui-table-cell mui-col-xs-9">
+	           
+	            	<input type="text" class="mui-input-clear" placeholder="学号">
+	        	</div>
+	        	
+	        	<div class=" mui-table-cell mui-col-xs-9">
+	            	
+	            	<input type="text" class="mui-input-clear" placeholder="宿舍地址">
+	        	</div>-->
+				</div>
+
+				<div class="mui-input-group">
+					<textarea rows="5" placeholder="备注" style="background-color: #FFFFFF;"></textarea>
+
+					<div class="mui-button-row">
+
+						<button id="toastBtn" type="button" class="mui-btn mui-btn-blue mui-btn-outlined">提交</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			var dtPicker = new mui.DtPicker({
+				type: "hour",
+			});
+			document.getElementById("timein").addEventListener("tap", function() {
+				dtPicker.show(function(selectItems) {
+					document.getElementById("timein").value =  selectItems.y.value + "/" + selectItems.m.value + "/" + selectItems.d.value // + "/" + selectItems.h.value + "/"
+				});
+			});
+			document.getElementById("timeout").addEventListener("tap", function() {
+				dtPicker.show(function(selectItems) {
+					document.getElementById("timeout").value =selectItems.y.value + "/" + selectItems.m.value + "/" + selectItems.d.value //+ "/" + selectItems.h.value + "/"
+				});
+			});
+			document.getElementById("toastBtn").addEventListener('tap', function() {
+				mui.toast('你的申请已经提交');
+				mui.openWindow({
+					url: "service-review.html"
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

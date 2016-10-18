@@ -1,0 +1,571 @@
+/* 初始化 */
+body,h1,h2,h3,div,p,ul,ol,li,dl,dd,dt,form,textarea,input,a,img,span,em,i{ margin: 0; padding: 0;}
+li{ list-style: none; }
+a{ text-decoration: none; color: #4a4a4a; }
+textarea,input{ outline: 0; }
+.left{ float: left; }.right{ float: right; }
+.clearfix{ *zoom:.; }
+.clearfix:after{ display: block; visibility: visible; clear: both; content: '.'; height: 0; font-size: 0; }
+.transition{ -webkit-transition: -webkit-transform .3s; transition: transform .3s;}
+body{ color: #4a4a4a; font-family: '黑体','微软雅黑';}
+.z-index999{ z-index: 999; }
+
+/* 头部 */
+#common-title{
+	position: fixed;
+	background: #fcd953;
+	width: 100%;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.3rem;
+	text-align: center;
+	top: 0;
+	left: 0;
+	z-index: 998;
+}
+#common-title a{
+	position: absolute;
+	width: 0.55rem;
+}
+#back{
+	top: 0;
+	left: 0;
+}
+#backdrop{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+}
+
+/* 页面-教务系统首页 */
+/*导航条*/
+#nav{
+	margin: 0.9rem 0 0.18rem 0;
+}
+#nav a{
+	float: left;
+	width: 25%;
+	height: 0.85rem;
+	line-height: 0.18rem;
+	font-size: 0.16rem;
+	text-align: center;
+}
+#nav div{
+	background: url(../images/index-nav.png) 0 0 no-repeat;
+	background-size: 2.4rem 0.6rem;
+	margin: 0 auto 0.05rem;
+	width: 0.6rem;
+	height: 0.6rem;
+}
+#nav a:nth-child(2) div{
+	background-position: 33.333% 0rem;
+}
+#nav a:nth-child(3) div{
+	background-position: 66.666% 0rem;
+}
+#nav a:nth-child(4) div{
+	background-position: 100% 0rem;
+}
+/*内容*/
+#index-content{
+	border-top: #f4f4f4 0.1rem solid;
+	padding: 0.01rem 0.16rem 0 0.2rem;
+}
+#index-new{
+	border-left: #f0a411 0.1rem solid;
+	padding-left: 0.1rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	color: #000;
+}
+#index-new h2{
+	font-size: 0.16rem;
+	font-weight: normal;
+}
+#new-content{
+	margin-top: 0.05rem;
+}
+#new-content a{
+	display: block;
+	margin-top: 0.1rem;
+}
+.new-img{
+	float: left;
+	margin-top: 0.05rem;
+	width: 0.9rem;
+}
+.new-cell{
+	float: left;
+	margin-left: 0.12rem;
+	width: 3.42rem;
+	line-height: 0.18rem;
+}
+.new-title{
+	margin-top: 0.04rem;
+	font-size: 0.16rem;
+	font-weight: normal;
+	color: #000;
+}
+.new-text{
+	margin-top: 0.06rem;
+	font-size: 0.12rem;
+	color: #8d8d8d;
+}
+
+/*页面-课表查询*/
+/*头部*/
+#week-selected{
+	margin: 0 auto;
+	width: 1.80rem;
+}
+#week-selected p{
+	margin-left: 0.4rem;
+	width: 1rem;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	font-size: 0.24rem;
+}
+.triangle{
+	margin-top: 0.15rem;
+	width: 0;
+	height: 0;
+	border-top: #181818 0.07rem solid;
+	border-left: transparent 0.06rem solid;
+	border-right: transparent 0.06rem solid;
+	text-indent: -99em;
+	overflow: hidden;
+}
+#course-term{
+	line-height: 0.32rem;
+	font-size: 0.18rem;
+}
+#select-warp{
+	position: absolute;
+	border-radius: 0 0 0.05rem 0.05rem;
+	height: 0;
+	overflow: scroll;
+	top: 0.7rem;
+	left: 1.5rem;
+	z-index: 2;
+	background: #fcd953;
+	transition: height 0.5s;
+	-webkit-transition: height 0.5s;
+	-webkit-overflow-scrolling: touch;
+}
+#week-select{
+	width: 1.8rem;
+	line-height: 0.38rem;
+	font-size: 0.24rem;
+}
+#week-select .selected{
+	background: #4a4a4a;
+	color: #fcd953;
+}
+/*课表*/
+#course{
+	position: relative;
+	z-index: 997;
+	background: url(../images/course-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	background-origin: content-box;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-top: 0.7rem;
+	height: 100%;
+	font-size: 0.2rem;
+}
+#course-title{
+	background: rgba(255,255,255,0.5);
+	height: 0.5rem;
+	text-align: center;
+}
+#course-title dt,#course-title dd{
+	float: left;
+}
+#month{
+	margin-right: 0.1rem;
+	width: 0.5rem;
+	line-height: 0.5rem;
+}
+#course-title dd{
+	margin: 0.03rem 0.08rem 0.02rem 0.07rem;
+	height: 0.45rem;
+	line-height: .2rem;
+	width: 0.45rem;
+}
+#course-title .date{
+	font-size: 0.16rem;
+}
+#course-title .active{
+	background: #ff5f5f;
+	border-radius: 50%;
+	color: #fff;
+	overflow: hidden;
+}
+#course-content{
+	position: relative;
+	z-index: 997;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+#course ul{
+	float: left;
+	line-height: 0.5rem;
+	text-align: center;
+	overflow: hidden;
+}
+#course #jieshu li{
+	width: 100%;
+}
+/*定义节数class*/
+.jie1 ul{ height: .6rem; }.jie2 ul{ height: 1.1rem; }.jie3 ul{ height: 1.6rem; }.jie4 ul{ height: 2.1rem; }.jie5 ul{ height: 2.6rem; }.jie6 ul{ height: 3.1rem; }.jie7 ul{ height: 3.6rem; }.jie8 ul{ height: 4.1rem; }.jie9 ul{ height: 4.6rem; }.jie10 ul{ height: 5.1rem; }.jie11 ul{ height: 5.6rem; }.jie12 ul{ height: 6.1rem; }.jie13 ul{ height: 6.6rem; }.jie14 ul{ height: 7.1rem; }.jie15 ul{ height: 7.6rem; }.jie16 ul{ height: 8.1rem; }.jie17 ul{ height: 8.6rem; }.jie18 ul{ height: 9.1rem; }.jie19 ul{ height: 9.6rem; }.jie20 ul{ height: 10.1rem; }.jie21 ul{ height: 10.6rem; }.jie22 ul{ height: 11.1rem; }.jie23 ul{ height: 11.6rem; }.jie24 ul{ height: 12.1rem; }.jie25 ul{ height: 12.6rem; }
+#course li{
+	width: .6rem;
+	height: 0.5rem;
+}
+#jieshu{
+	margin-right: 0.1rem;
+	width: 0.5rem;
+}
+#jieshu-bg{
+	position: absolute;
+	z-index: 1;
+	top: 1.2rem;
+	left: 0;
+	width: 0.5rem;
+	background: rgba(255,255,255,0.5);
+}
+#nowday-bg{
+	position: absolute;
+	z-index: 1;
+	top: 1.2rem;
+	left: -1rem;
+	width: .6rem;
+	background: rgba(198,167,96,0.5);
+}
+#course ul:not(#jieshu){
+	width: 0.6rem;
+}
+.class{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: #fff 0.02rem solid;
+	border-radius: 0.1rem;
+	line-height: 0.24rem;
+	color: #fff;
+	overflow: hidden;
+}
+.class-hide:after{
+	position: absolute;
+	content: '';
+	border-top: #ccc 0.1rem solid;
+	border-right: #ccc 0.1rem solid;
+	border-left: transparent 0.1rem solid;
+	border-bottom: transparent 0.1rem solid;
+	width: 0;
+	height: 0;
+	top: 0;
+	right: 0;
+}
+.not-this-week{
+	background: #ccc !important;
+	color: #000 !important;
+}
+#aside{
+	font-size: .4rem;
+	top: 0;
+	right: 0;
+}
+#other-select{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 75%;
+	height: 100%;
+}
+#option-title{
+	background: #fcd953;
+	width: 100%;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.3rem;
+	text-align: center;
+}
+#other-select dd{
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: .18rem;
+	border-bottom: #eee .01rem solid;
+}
+.option-left{
+	float: left;
+	margin-left: .2rem;
+	color: #000;
+}
+#other-select em{
+	float: right;
+	margin-right: .2rem;
+	font-style: normal;
+	color: #1f93ff;
+}
+
+/*选择器*/
+.picker-select{
+	font-style: normal;
+}
+#picker{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+}
+#picker-main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	height: 2.8rem;
+	font-size: .18rem;
+	text-align: center;
+	border: #ccc .03rem solid;
+	border-radius: .07rem;
+	background: #fff;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+}
+.picker-scroll{
+	float: left;
+}
+.picker-title{
+	color: #8d8d8d;
+}
+.picker-oh{
+	position: relative;
+	color: #181818;
+}
+.picker-oh ul{
+	position: relative;
+	z-index: 2;
+	height: 2rem;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+.picker-oh .selected{
+	color: #1f93ff;
+}
+.picker-change{
+	position: absolute;
+	z-index: 1;
+	top: .77rem;
+	border-top: #1f93ff .03rem solid;
+	border-bottom: #1f93ff .03rem solid;
+	width: 100%;
+	height: .4rem;
+}
+#button{
+	text-align: center;
+	line-height: .4rem;
+}
+#button div{
+	float: left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 50%;
+	line-height: .38rem;
+	border-top: #ccc .02rem solid;
+}
+#sure{
+	border-left: #ccc .02rem solid;
+}
+
+/*页面-课表详情*/
+#class-content,#test-content,#grade-content{
+	margin-top: 0.7rem;
+}
+#class-content{
+	text-align: center;
+}
+#class-name-warp{
+	position: relative;
+	display: inline-block;
+	height: .4rem;
+	-webkit-transition: height 0.5s;
+	transition: height 0.5s;
+}
+#class-name{
+	text-align: center;
+  line-height: 0.4rem;
+  vertical-align: top;
+  color: #181818;
+  overflow: hidden;
+}
+#class-name p{
+	display: inline-block;
+	margin: 0 .28rem 0 .32rem;
+}
+#class-name .triangle{
+	position: absolute;
+	top: 0;
+	right: .05rem;
+	display: none;
+}
+#c-name-select{
+	position: absolute;
+	top: 0.4rem;
+	width: 100%;
+	height: 0;
+  background: #cbcbcb;
+	line-height: .4rem;
+  overflow: hidden;
+	-webkit-transition: height 0.5s;
+	transition: height 0.5s;
+}
+#c-name-select li{
+	padding-left: .05rem;
+}
+#class-content #subject{
+	padding: .15rem .28rem 0rem;
+}
+#class-content .subject-info p{
+	line-height: .3rem;
+	text-align: left;
+}
+#class-creditHour{
+	font-style: normal;
+}
+#class-courseIntroduction{
+	margin-top: .2rem;
+	width: 80%;
+	height: .8rem;
+	line-height: 0.2rem;
+	font-size: 0.16rem;
+	color: #8d8d8d;
+	border-color: #8d8d8d;
+	-webkit-border-radius: .1rem;
+	border-radius: .1rem;
+	resize: none;
+}
+
+/*页面-成绩查询*/
+/*个人信息*/
+#grade-content{
+	margin-top: 0.7rem;
+}
+#per-info{
+	position: relative;
+	font-size: 0.18rem;
+}
+#term{
+	height: 0.4rem;
+	margin: 0 1.17rem;
+}
+.term{
+	width: 2.44rem;
+	color: #181818;
+}
+.term p{
+	margin-left: 0.05rem;
+	line-height: 0.4rem;
+}
+#term em{
+	color: #1f93ff;
+}
+.term em{
+	margin-right: 0.04rem;
+	line-height: 0.4rem;
+	font-style: normal;
+}
+.term i{
+	font-style: normal;
+}
+.term .triangle{
+	margin: 0.16rem 0 0 0.18rem;
+}
+#term-select{
+	position: absolute;
+	background: #cbcbcb;
+	height: 0;
+	overflow: hidden;
+	top: 0.4rem;
+	left: 1.17rem;
+	transition: height 0.5s;
+	-webkit-transition: height 0.5s;
+}
+#term-select .selected,#c-name-select .selected{
+	background: #b3b2b2;
+}
+#per-who,#credit{
+	width: 50%;
+	height: 1.32rem;
+	color: #1f93ff;
+}
+#per-photo{
+	display: block;
+	border-radius: 50%;
+	margin: 0.1rem auto 0;
+	width: 0.8rem;
+}
+#per-name{
+	height: 0.34rem;
+	line-height: 0.34rem;
+	font-size: 0.2rem;
+	text-align: center;
+}
+#ave-credit{
+	display: block;
+	margin-top: 0.2rem;
+	height: .77rem;
+	text-align: center;
+	font-size: 0.6rem;
+}
+#credit span{
+	display: block;
+	text-align: center;
+	font-size: 0.16rem;
+	color: #0077ed;
+}
+/*科目*/
+#subject{
+	border-top: #f4f4f4 0.02rem solid;
+}
+#subject li{
+	border-bottom: #f4f4f4 0.02rem solid;
+	padding: 0.15rem 0.28rem 0.06rem;
+}
+.subject-grade{
+	line-height: 0.3rem;
+	font-size: 0.2rem;
+}
+.subject-grade .left{
+	color: #000;
+}
+.subject-grade .right{
+	color: #1f93ff;
+}
+.subject-info{
+	line-height: 0.2rem;
+	font-size: 0.16rem;
+	color: #8d8d8d;
+}
+.subject-info .left,.subject-info p{
+	margin: 0.02rem 0 0.05rem;
+}
+
+/*页面-考试查询*/
+/*个人信息*/
+.test#per-who{
+	width: 100%;
+}

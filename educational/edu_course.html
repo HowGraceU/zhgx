@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>教务系统-课表查询</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/edu_course.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="common-title" class="transition">
+		<a id="back"><</a>
+		<div id="week-selected" class="clearfix">
+			<p class="left">第1周</p>
+			<div class="triangle left">三角形</div>
+		</div>
+		<div id="course-term">2015-2016学年 第一学期</div>
+		<!-- 加上一个外包解决部分手机overflow：scroll与background-color之间的bug -->
+		<div id="select-warp">
+			<ul id="week-select">
+				<li>第1周</li>
+				<li>第2周</li>
+				<li>第3周</li>
+				<li>第4周</li>
+				<li>第5周</li>
+				<li>第6周</li>
+				<li>第7周</li>
+				<li>第8周</li>
+				<li>第9周</li>
+				<li>第10周</li>
+				<li>第11周</li>
+				<li>第12周</li>
+				<li>第13周</li>
+				<li>第14周</li>
+				<li>第15周</li>
+				<li>第16周</li>
+				<li>第17周</li>
+				<li>第18周</li>
+				<li>第19周</li>
+				<li>第20周</li>
+				<li>第21周</li>
+				<li>第22周</li>
+				<li>第23周</li>
+				<li>第24周</li>
+				<li>第25周</li>
+			</ul>
+		</div>
+		<a id="aside" class="transition">+</a>
+	</div>
+	<!-- 课表 -->
+	<div id="course" class="transition">
+		<dl id="course-title" class="clearfix">
+			<dt id="month"></dt>
+			<dd>
+				<div class="date"></div>
+				<div class="week">周日</div>
+			</dd>
+			<dd>
+				<div class="date"></div>
+				<div class="week">周一</div>
+			</dd>
+			<dd>
+				<div class="date"></div>
+				<div class="week">周二</div>
+			</dd>
+			<dd>
+				<div class="date"></div>
+				<div class="week">周三</div>
+			</dd>
+			<dd>
+				<div class="date"></div>
+				<div class="week">周四</div>
+			</dd>
+			<dd>
+				<div class="date"></div>
+				<div class="week">周五</div>
+			</dd>
+			<dd>
+				<div class="date"></div>
+				<div class="week">周六</div>
+			</dd>
+		</dl>
+		<div id="course-content" class="clearfix">
+			<ul id="jieshu">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+				<li>13</li>
+				<li>14</li>
+				<li>15</li>
+				<li>16</li>
+				<li>17</li>
+				<li>18</li>
+				<li>19</li>
+				<li>20</li>
+				<li>21</li>
+				<li>22</li>
+				<li>23</li>
+				<li>24</li>
+				<li>25</li>
+			</ul>
+			<ul id="sunday">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul id="monday">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul id="tuesday">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul id="wednesday">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul id="thursday">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul id="friday">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul id="saturday">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div id="jieshu-bg"></div>
+		<div id="nowday-bg"></div>
+	</div>
+	<!-- 蒙层 -->
+	<div id="backdrop" class="transition"></div>
+	<!-- 其他选项 -->
+	<dl id="other-select" class="transition">
+		<dt id="option-title">课表设置</dt>
+		<dd id="term-option" class="clearfix">
+			<span class="option-left">当前学期:</span>
+			<em id="aside-term"><i class="picker-select">2016-2017</i>学年 第<i class="picker-select">一</i>学期</em>
+		</dd>
+		<dd id="week-option" class="clearfix">
+			<span class="option-left">当前周数:</span>
+			<em id="aside-week">第<i class="picker-select">4</i>周</em>
+		</dd>
+		<dd id="jieshu-option" class="clearfix">
+			<span class="option-left">最大节数:</span>
+			<em id="aside-jieshu" class="picker-select">16</i></em>
+		</dd>
+	</dl>
+	<!-- 其他选项-弹出层 -->
+	<div id="picker" class="z-index999">
+		<div id="picker-main">
+			<div id="picker-wrap" class="clearfix">
+				<div class="picker-scroll" style="width: 100%">
+					<div class="picker-title">学年</div>
+					<div class="picker-oh">
+						<ul>
+							<li></li>
+							<li></li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+							<li>11</li>
+							<li>12</li>
+							<li>13</li>
+							<li>14</li>
+							<li>15</li>
+							<li>16</li>
+							<li>17</li>
+							<li>18</li>
+							<li>19</li>
+							<li>20</li>
+							<li>21</li>
+							<li>22</li>
+							<li>23</li>
+							<li>24</li>
+							<li>25</li>
+							<li></li>
+							<li></li>
+						</ul>
+						<div class="picker-change"></div>
+					</div>
+				</div>
+			</div>
+			<div id="button" class="clearfix">
+				<div id="cancle">取消</div>
+				<div id="sure">确定</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.querySelector('.picker-scroll').addEventListener('tap', function(){
+			console.log(1)
+		})
+	</script>
+</body>
+</html>

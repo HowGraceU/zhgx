@@ -1,0 +1,574 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "index-concern.html",
+      "css/iconfont.css",
+      "fonts/iconfont.ttf"
+    ],
+    "refer": [
+      "index-mine.html",
+      "index-service.html",
+      "index-concern.html",
+      "index-amuse.html"
+    ]
+  },
+  "index-mine.html": {
+    "resources": [
+      "images/yizi.jpg",
+      "css/feedback.css",
+      "js/feedback.js",
+      "js/mui.view.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "index-service.html": {
+    "resources": [
+      "images/IMG2.JPG",
+      "images/IMG4.JPG",
+      "images/IMG3.JPG",
+      "images/IMG1.JPG",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "service-bed.html",
+      "css/iconfont.css",
+      "service-complaints.html",
+      "service-things-buy.html",
+      "service-order.html",
+      "service-stayhotel.html",
+      "service-food-buy.html",
+      "service-repair.html",
+      "fonts/iconfont.ttf",
+      "js/index.js",
+      "data/data.json",
+      "data/xcode.json"
+    ],
+    "refer": [
+      "hostel-index.html",
+      "service-bed.html",
+      "service-complaints.html",
+      "service-things-buy.html",
+      "service-order.html",
+      "service-stayhotel.html",
+      "service-food-buy.html",
+      "service-repair.html",
+      "service-attence.html",
+      "service-electricity.html",
+      "service-message.html",
+      "service-review.html",
+      "service-rated.html",
+      "service-car.html",
+      "service-repair-list.html",
+      "service-admin.html",
+      "service-yanchi.html",
+      "service-information.html",
+      "service-rated-list.html",
+      "waiting.html"
+    ]
+  },
+  "index-concern.html": {
+    "resources": [
+      "images/meeting1.jpg",
+      "images/twostudy.jpg",
+      "images/baomi.jpg",
+      "images/meet1.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/news/heyin.png",
+      "images/news/xiaoyuan.png",
+      "images/news/yxhheying.png"
+    ],
+    "refer": [
+      "concern-news2.html",
+      "concern-news4.html",
+      "concern-news6.html",
+      "concern-news3.html"
+    ]
+  },
+  "hostel-attence-index.html": {
+    "resources": [
+      "images/weizhi.jpg"
+    ],
+    "refer": [
+      "hostel-attence-come-list.html"
+    ]
+  },
+  "hostel-index.html": {
+    "refer": [
+      "hostel-attence-index.html",
+      "hostel-things-buy.html"
+    ],
+    "resources": []
+  },
+  "hostel-things-buy.html": {
+    "resources": [
+      "images/boji.png",
+      "hostel-things-buy-pay.html",
+      "images/yicha.jpg",
+      "images/saozhou.jpg",
+      "images/tuoba.png"
+    ],
+    "refer": [
+      "hostel-things-buy-pay.html"
+    ]
+  },
+  "hostel-things-order.html": {
+    "resources": [
+      "hostel-things-order-check.html"
+    ],
+    "refer": [
+      "hostel-things-order-check.html"
+    ]
+  },
+  "hostel-things-buy-pay.html": {
+    "refer": [
+      "hostel-things-order.html"
+    ],
+    "resources": []
+  },
+  "index-amuse.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "service-complaints.html": {
+    "resources": [
+      "images/paizhao.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "service-things-buy.html": {
+    "resources": [
+      "images/boji.png",
+      "images/yicha.jpg",
+      "images/saozhou.jpg",
+      "images/tuoba.png",
+      "images/yizi.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/sanreqi.jpg",
+      "images/jianpan.jpg",
+      "images/shubiao.jpg",
+      "images/yagao.jpg",
+      "images/ximiannai.jpg",
+      "images/shujuxian.jpg",
+      "images/zhijin.jpg",
+      "images/upan.jpg",
+      "images/feizao.jpg",
+      "images/xifalu.jpg",
+      "js/juicer-min.js",
+      "data/service-food-buy.json",
+      "data/postdata.json",
+      "js/index.js"
+    ],
+    "refer": [
+      "service-things-buy-pay.html"
+    ]
+  },
+  "service-bed.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/yizi.jpg",
+      "js/index.js"
+    ],
+    "refer": [
+      "service-review.html"
+    ]
+  },
+  "service-order.html": {
+    "resources": [
+      "images/boji.png",
+      "images/yicha.jpg",
+      "images/saozhou.jpg",
+      "images/tuoba.png",
+      "images/yizi.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "service-order-check.html",
+      "images/gaijiaofan.jpg",
+      "service-order-check-food.html",
+      "js/juicer-min.js",
+      "js/index.js",
+      "service-order-check-over.html"
+    ],
+    "refer": [
+      "service-order-check.html",
+      "service-order-check-food.html",
+      "service-order-check-over.html"
+    ]
+  },
+  "service-food-buy.html": {
+    "resources": [
+      "images/gaijiaofan.jpg",
+      "images/guandongzhu.jpg",
+      "images/kele.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/xb.jpg",
+      "images/gjf1.jpg",
+      "images/gjf2.jpg",
+      "images/ymb.jpg",
+      "images/gjf3.jpg",
+      "images/md.jpg",
+      "images/gz.jpg",
+      "images/gjf.jpg",
+      "images/chayed.jpg",
+      "images/zongzi.jpg",
+      "images/baozi.jpg",
+      "images/lc.jpg",
+      "js/juicer-min.js",
+      "data/service-food-buy.json",
+      "js/index.js"
+    ],
+    "refer": [
+      "service-food-buy-pay.html"
+    ]
+  },
+  "service-stayhotel.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "js/index.js"
+    ],
+    "refer": [
+      "service-review.html"
+    ]
+  },
+  "service-repair.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "service-attence.html": {
+    "resources": [
+      "js/mui.min.js",
+      "images/weizhi.jpg",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "service-attence-list.html",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "js/index.js"
+    ],
+    "refer": [
+      "service-attence-list.html",
+      "service-review.html"
+    ]
+  },
+  "service-electricity.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "service-order-check.html": {
+    "resources": [
+      "service-order.html",
+      "images/saozhou.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/index.js",
+      "js/juicer-min.js",
+      "images/boji.png"
+    ],
+    "refer": [
+      "service-order.html"
+    ]
+  },
+  "service-message.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/juicer-min.js",
+      "data/service-message.json"
+    ],
+    "refer": [
+      "service-review-status.html"
+    ]
+  },
+  "service-review.html": {
+    "resources": [
+      "images/chuang.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/tiao.png",
+      "images/jia.png",
+      "images/su.png",
+      "service-review-status.html",
+      "images/tousu.png",
+      "images/yanchi.png",
+      "service-review-status5.html",
+      "service-review-status1.html",
+      "service-review-status2.html",
+      "service-review-status3.html",
+      "service-review-status4.html"
+    ],
+    "refer": [
+      "service-review-status.html",
+      "service-review-status5.html",
+      "service-review-status1.html",
+      "service-review-status2.html",
+      "service-review-status3.html",
+      "service-review-status4.html"
+    ]
+  },
+  "service-review-status.html": {
+    "resources": [
+      "service-review.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "service-review.html"
+    ]
+  },
+  "service-rated.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "service-food-buy-pay.html": {
+    "resources": [
+      "images/gaijiaofan.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "images/kele.jpg",
+      "css/mui.min.css",
+      "js/juicer-min.js",
+      "js/index.js"
+    ],
+    "refer": [
+      "service-order.html"
+    ]
+  },
+  "service-attence-list.html": {
+    "resources": [
+      "service-attence.html",
+      "images/weizhi.jpg"
+    ],
+    "refer": [
+      "service-attence.html"
+    ]
+  },
+  "service-car.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css"
+    ]
+  },
+  "service-repair-list.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "service-repair-more.html",
+      "service-repair.html"
+    ]
+  },
+  "service-admin.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/juicer-min.js",
+      "data/data.json"
+    ],
+    "refer": [
+      "service-admin-list.html",
+      "service-admin-over.html"
+    ]
+  },
+  "service-admin-list.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "service-repair-more.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "service-yanchi.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/mui.picker.min.js",
+      "css/mui.picker.min.css",
+      "js/index.js"
+    ],
+    "refer": [
+      "service-review.html"
+    ]
+  },
+  "service-review-status5.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "service-review.html"
+    ],
+    "refer": [
+      "service-review.html"
+    ]
+  },
+  "service-review-status1.html": {
+    "resources": [
+      "service-review.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "service-review.html"
+    ]
+  },
+  "service-review-status2.html": {
+    "resources": [
+      "service-review.html"
+    ],
+    "refer": [
+      "service-review.html"
+    ]
+  },
+  "service-review-status3.html": {
+    "resources": [
+      "service-review.html"
+    ],
+    "refer": [
+      "service-review.html"
+    ]
+  },
+  "service-review-status4.html": {
+    "resources": [
+      "service-review.html"
+    ],
+    "refer": [
+      "service-review.html"
+    ]
+  },
+  "service-information.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/index.js"
+    ]
+  },
+  "service-things-buy-pay.html": {
+    "refer": [
+      "service-order.html"
+    ],
+    "resources": [
+      "js/juicer-min.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "js/index.js"
+    ]
+  },
+  "service-rated-list.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "service-rated.html",
+      "service-rated1.html"
+    ]
+  },
+  "waiting.html": {
+    "resources": [
+      "js/mui.picker.min.js",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/mui.picker.min.css"
+    ]
+  },
+  "service-order-check-food.html": {
+    "resources": [
+      "images/kele.jpg",
+      "service-order.html",
+      "images/gaijiaofan.jpg"
+    ],
+    "refer": [
+      "service-order.html"
+    ]
+  },
+  "concern-news4.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "service-admin-over.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "concern-news6.html": {
+    "resources": [
+      "images/news/xiaoyuan.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "concern-news2.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css"
+    ]
+  },
+  "service-order-check-over.html": {
+    "resources": [
+      "service-order.html"
+    ],
+    "refer": [
+      "service-order.html"
+    ]
+  }
+}

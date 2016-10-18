@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			header.mui-bar {
+				background-color: #009FFF;
+			}
+			
+			header>a,
+			h1.mui-title {
+				color: #FFFFFF;
+			}
+			.mui-active>a.mui-navigate-right{background-color: #8A6DE9;color: #FFFFFF;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">调查测评</h1>
+		</header>
+
+		<div class="mui-content">
+			<div class="mui-input-group mui-card">
+
+				<div class="mui-input-row">
+					<label class="latext">姓名：</label>
+					<input type="text" class="mui-input-clear" value="张三">
+				</div>
+
+<div class="mui-input-row">
+					<label class="latext">班级：</label>
+					<input type="text" class="mui-input-clear" value="软件工程121">
+				</div>
+				<div class="mui-input-row">
+					<label class="latext">院系：</label>
+					<input type="text" class="mui-input-clear" value="信息电子学院">
+				</div>
+				<div class="mui-input-row">
+					<label class="latext">学号：</label>
+					<input type="text" class="mui-input-clear" value="1234567890">
+				</div>
+
+				<div class="mui-input-row">
+					<label class="latext">寝室地址</label>
+					<input type="text" class="mui-input-clear" value="励志园3幢304">
+				</div>
+			</div>
+			<div class="mui-card">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse mui-active">
+						<a class="mui-navigate-right" href="#">张春晓老师评测</a>
+						<div class="mui-collapse-content">
+							<form class="mui-input-group">
+								<div class="mui-input-row mui-radio mui-left">
+									<label>非常满意</label>
+									<input name="radio1" type="radio">
+								</div>
+
+								<div class="mui-input-row mui-radio mui-left">
+									<label>满意</label>
+									<input name="radio1" type="radio">
+								</div>
+
+								<div class="mui-input-row mui-radio mui-left">
+									<label>一般</label>
+									<input name="radio1" type="radio">
+								</div>
+								<div class="mui-input-row mui-radio mui-left">
+									<label>较差</label>
+									<input name="radio1" type="radio">
+								</div>
+							</form>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse mui-active">
+						<a class="mui-navigate-right" href="#">杨晓妮老师评测</a>
+						<div class="mui-collapse-content">
+							<form class="mui-input-group">
+								<div class="mui-input-row mui-radio mui-left">
+									<label>非常满意</label>
+									<input name="radio1" type="radio">
+								</div>
+
+								<div class="mui-input-row mui-radio mui-left">
+									<label>满意</label>
+									<input name="radio1" type="radio">
+								</div>
+
+								<div class="mui-input-row mui-radio mui-left">
+									<label>一般</label>
+									<input name="radio1" type="radio">
+								</div>
+								<div class="mui-input-row mui-radio mui-left">
+									<label>较差</label>
+									<input name="radio1" type="radio">
+								</div>
+							</form>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse mui-active">
+						<a class="mui-navigate-right" href="#">雷军老师评测</a>
+						<div class="mui-collapse-content">
+							<form class="mui-input-group">
+								<div class="mui-input-row mui-radio mui-left">
+									<label>非常满意</label>
+									<input name="radio1" type="radio">
+								</div>
+
+								<div class="mui-input-row mui-radio mui-left">
+									<label>满意</label>
+									<input name="radio1" type="radio">
+								</div>
+
+								<div class="mui-input-row mui-radio mui-left">
+									<label>一般</label>
+									<input name="radio1" type="radio">
+								</div>
+								<div class="mui-input-row mui-radio mui-left">
+									<label>较差</label>
+									<input name="radio1" type="radio">
+								</div>
+							</form>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse mui-active">
+						<a class="mui-navigate-right" href="#">我的意见</a>
+						<div class="mui-collapse-content">
+						<div class="mui-input-group">
+					<textarea rows="5" placeholder="点评" style="background-color: #FFFFFF;"></textarea>
+
+					<div class="mui-button-row">
+					<button id="toastBtn" type="button" class="mui-btn mui-btn-blue  mui-btn-outlined">提交</button>
+				</div>
+					</li>
+
+			</div>
+
+			<script type="text/javascript">
+						document.getElementById("toastBtn").addEventListener('tap', function() {
+								mui.toast('你的评测已提交');
+								mui.back();
+							});
+			</script>
+
+	</body>
+
+</html>

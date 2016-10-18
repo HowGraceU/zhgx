@@ -1,0 +1,30 @@
+//{
+//"rice":[
+//	{
+//	"name":"红烧鸡块盖浇饭","price":"20","src":"images/gaijiaofan.jpg"
+//	},
+//	{
+//	"name":"香干肉丝盖浇饭","price":"10","src":"images/gjf.jpg"
+//	},
+//	{"name":"麻婆豆腐盖浇饭","price":"12","src":"images/gjf1.jpg"},
+//	{"name":"小炒肉盖浇饭","price":"15","src":"images/gjf2.jpg"},
+//	{"name":"红烧牛腩盖浇饭","price":"25","src":"images/gjf3.jpg"}
+//],
+//"snack":[
+//	{"name":"包子","price":"5","src":"images/baozi.jpg"},
+//	{"name":"粽子","price":"6","src":"images/zongzi.jpg"},
+//	{"name":"玉米棒","price":"5","src":"images/ymb.jpg"},
+//	{"name":"茶叶蛋","price":"2","src":"images/chayed.jpg"},
+//	{"name":"关东煮","price":"10","src":"images/guandongzhu.jpg"}
+//],
+//"drink":[
+//	{"name":"可乐","price":"5","src":"images/kele.jpg"},
+//	{"name":"脉动","price":"5","src":"images/md.jpg"},
+//	{"name":"雪碧","price":"5","src":"images/xb.jpg"},
+//	{"name":"绿茶","price":"5","src":"images/lc.jpg"},
+//	{"name":"芒果汁","price":"5","src":"images/gz.jpg"},
+//	{"name":"橙汁","price":"5","src":"images/gz.jpg"}
+//]
+//
+//}
+{"meta":{"success":true,"message":"ok"},"data":[{"id":"b62c0928-f239-4dff-a3f3-8058ef2017af","code":"12","name":"12","inPrice":12.0,"onPrice":12.0,"count":12,"picture":"12"}]}

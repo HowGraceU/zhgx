@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<style type="text/css">
+			.mui-control-content {
+				background-color: white;
+				min-height: 215px;
+			}
+			
+			.mui-control-content .mui-loading {
+				margin-top: 50px;
+			}
+			
+			.latext {
+				color: #EC971F;
+			}
+			
+			header.mui-bar {
+				background-color: #009FFF;
+			}
+			
+			header>a,
+			h1.mui-title {
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">考勤管理</h1>
+		</header>
+
+		<div class="mui-content">
+			<div style="padding: 10px 10px;">
+				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1">
+						员工打卡
+					</a>
+					<a class="mui-control-item" href="#item2">
+						员工请假
+					</a>
+					<a class="mui-control-item" href="#item3">
+						员工调班
+					</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<form class="mui-input-group" style="text-align: center;overflow: auto;">
+						<div class="mui-input-row"><label class="latext">姓名：</label><input type="text" name="name" class="mui-input-clear" value="李四"></div>
+						<div class="mui-input-row"><label class="latext">工号：</label><input type="text" name="wid" class="mui-input-clear" value="1234567890"></div>
+						<div class="mui-input-row"><label class="latext">电话：</label><input type="text" name="mobile" class="mui-input-clear" value="187627389475"></div>
+						<div class="mui-input-row">
+							<label class="latext">职位：</label>
+							<input type="text" name="jobName" class="mui-input-clear" value="后勤部">
+						</div>
+						<!--<div class="mui-input-row"><label class="latext">时间：</label><input type="text" class="mui-input-clear" value="2016/6/16 am7:55" disabled="disabled"></div>-->
+						<div>
+							<h4 style="padding: 11px 15px; color: #8F8F94;">位置</h4>
+							<div>
+								<p id="places"></p>
+								<div id="info" style="display:none ;"></div>
+							</div>
+							<!--<img src="images/weizhi.jpg" style=" width: 100%; height: auto;display: block;" />-->
+						</div>
+						<hr />
+						<div>
+							<div style="overflow: hidden;">
+								<a href="service-attence-list.html" class="mui-icon mui-icon-arrowright" style="float: right;;margin: 0 15px;font-size: 18px;color: #8A6DE9">历史</a>
+							</div>
+							<ul class="mui-table-view" id="worklist">
+
+							</ul>
+						</div>
+						<div class="mui-button-row" style="margin: 10px 15px;overflow: hidden;">
+							<button id="btnup" type="button" class="mui-btn mui-btn-green mui-col-xs-4" style="float: left;">上班</button>
+							<button id="btndown" type="button" class="mui-btn mui-btn-green mui-col-xs-4" style="float: right;">下班</button>
+						</div>
+					</form>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<form class="mui-input-group" style="text-align: center;overflow: auto;">
+						<div class="mui-input-row">
+							<label class="latext">姓名：</label>
+							<input name="name" type="text" class="mui-input-clear" value="李四">
+						</div>
+
+						<div class="mui-input-row">
+							<label class="latext">工号：</label>
+							<input name="wid" type="text" class="mui-input-clear" value="1234567890">
+						</div>
+						<div class="mui-input-row"><label class="latext">电话：</label><input name="mobile" type="text" class="mui-input-clear" value="187627389475"></div>
+						<div class="mui-input-row">
+							<label class="latext">职位：</label>
+							<input type="text" name="jobName" class="mui-input-clear" value="后勤部">
+						</div>
+
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#" style="color: #EC971F;">请假类型</a>
+								<div class="mui-collapse-content" style="padding-top: 0;">
+									<ul class="mui-table-view" style="margin-top: 0;">
+										<li class="mui-table-view-cell mui-radio mui-left ">
+											<input name="radio" type="radio" value="事假" />事假
+										</li>
+										<li class="mui-table-view-cell mui-radio mui-left ">
+											<input name="radio" type="radio" value="病假" />病假
+
+										</li>
+										<li class="mui-table-view-cell mui-radio mui-left">
+											<input name="radio" type="radio" value="产假" />产假
+										</li>
+										<li class="mui-table-view-cell mui-radio mui-left">
+											<input name="radio" type="radio" value="婚假" />婚假
+										</li>
+										<li class="mui-table-view-cell mui-radio mui-left">
+											<input name="radio" type="radio" value="丧假" />丧假
+										</li>
+									</ul>
+								</div>
+							</li>
+
+						</ul>
+
+						<div class="mui-input-row">
+							<label class="latext">起始时间</label>
+							<input type="text" class="mui-input-clear" placeholder="年/月/日/" id="timea">
+						</div>
+						<div class="mui-input-row">
+							<label class="latext">结束时间</label>
+							<input type="text" class="mui-input-clear" placeholder="年/月/日/" id="timeb">
+						</div>
+
+						<textarea rows="5" placeholder="请假事由"></textarea>
+
+						<div class="mui-button-row" style="margin: 30px 15px;">
+
+							<button id="toastBtna" type="button" class="mui-btn mui-btn-warning  mui-btn-outlined">提交申请</button>
+						</div>
+					</form>
+				</div>
+				<div id="item3" class="mui-control-content">
+					<form class="mui-input-group" style="text-align: center;overflow: auto;">
+						<div class="mui-input-row"><label class="latext">姓名：</label><input type="text" name="name" class="mui-input-clear" value="李四"></div>
+						<div class="mui-input-row"><label class="latext">工号：</label><input type="text" name="wid" class="mui-input-clear" value="1234567890"></div>
+						<div class="mui-input-row"><label class="latext">电话：</label><input type="text" name="mobile" class="mui-input-clear" value="187627389475"></div>
+
+						<div class="mui-input-row">
+							<label class="latext">职位：</label>
+							<input type="text" name="jobName" class="mui-input-clear" value="后勤部">
+						</div>
+						<div class="mui-input-row"><label class="latext">原班时间</label><input type="text" class="mui-input-clear" id="timec"></div>
+						<div class="mui-input-row"><label class="latext">调班时间</label><input type="text" class="mui-input-clear" id="timed"></div>
+						<textarea rows="5" placeholder="申请事由"></textarea>
+						<div class="mui-button-row" style="margin: 30px 15px;"><button id="toastBtnb" type="button" class="mui-btn mui-btn-warning mui-btn-outlined">提交申请</button></div>
+					</form>
+				</div>
+			</div>
+
+			<!--<div class="mui-content">
+	    <div id="slider" class="mui-slider" style="overflow: visible;">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control  mui-segmented-control-inverted mui-segmented-control-negative">
+					<a class="mui-control-item mui-active" href="#item1mobile">
+				宿管请假
+			</a>
+					<a class="mui-control-item" href="#item2mobile">
+				宿管打卡
+			</a>
+					<a class="mui-control-item" href="#item3mobile">
+				宿管调班
+			</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<form class="mui-input-group" style="text-align: center;overflow: auto;">
+	        	<div class="mui-input-row">
+	            	<label class="latext">姓名：</label>
+	            	<input type="text" class="mui-input-clear" value="张三">
+	        	</div>
+	        	
+	        	<div class="mui-input-row">
+	            	<label class="latext">工号：</label>
+	            	<input type="text" class="mui-input-clear" value="1234567890">
+	        	</div>
+	        	
+	        	<div class="mui-input-row">
+	            	<label class="latext">请假类型</label>
+	            	<input type="text" class="mui-input-clear" placeholder="事、病、婚、年、丧、产">
+	        	</div>
+	        	
+	        	<div class="mui-input-row">
+	            	<label class="latext">请假时间</label>
+	            	<input type="text" class="mui-input-clear" placeholder="包含起始时间和终止时间">
+	        	</div>
+	        	
+	        	 <textarea  rows="5" placeholder="请假事由"></textarea>
+	        	 
+				<div class="mui-button-row" style="margin: 30px 15px;">
+					
+					<button id="toastBtna" type="button" class="mui-btn mui-btn-warning  mui-btn-outlined">提交申请</button>
+				</div>
+					</form>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper" style="overflow: visible;">
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+										<form class="mui-input-group" style="text-align: center;overflow: auto;"><div class="mui-input-row"><label class="latext">姓名：</label><input type="text" class="mui-input-clear" value="张三"></div><div class="mui-input-row"><label class="latext">工号：</label><input type="text" class="mui-input-clear" value="1234567890"></div><div class="mui-input-row"><label class="latext">时间：</label><input type="text" class="mui-input-clear" value="2016/6/16 am7:55" disabled="disabled"></div><div><h4 style="padding: 11px 15px; color: #8F8F94;">位置</h4><div class="mui-card"><img src="images/weizhi.jpg" style=" width: 100%; height: auto;display: block;"/></div></div><div class="mui-button-row" style="margin: 30px 15px;"><button id="toastBtn" type="button" class="mui-btn mui-btn-green  mui-btn-block">打卡</button></div></form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-control-content">
+						
+							<div class="mui-scroll">
+								<div class="mui-loading">
+									<div class="mui-spinner">
+										<form class="mui-input-group" style="text-align: center;overflow: auto;"><div class="mui-input-row"><label class="latext">姓名：</label><input type="text" class="mui-input-clear" value="张三"></div><div class="mui-input-row"><label class="latext">工号：</label><input type="text" class="mui-input-clear" value="1234567890"></div><div class="mui-input-row"><label class="latext">原班时间</label><input type="text" class="mui-input-clear" ></div><div class="mui-input-row"><label class="latext">调班时间</label><input type="text" class="mui-input-clear" ></div><textarea  rows="5" placeholder="申请事由"></textarea><div class="mui-button-row" style="margin: 30px 15px;"><button id="toastBtnb" type="button" class="mui-btn mui-btn-warning mui-btn-outlined">提交申请</button></div></form>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+	    
+	</div>-->
+			<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript">
+				mui.init();
+			
+				//			mui(".mui-btn").on('tap','button',function(){
+				//				mui.toast('你的申请已经提交');
+				//});
+
+				//			(function($) {
+				//				$('.mui-scroll-wrapper').scroll({
+				//					indicators: true //是否显示滚动条
+				//				});
+				//				var html2 = '<form class="mui-input-group" style="text-align: center;overflow: auto;"><div class="mui-input-row"><label class="latext">姓名：</label><input type="text" class="mui-input-clear" value="张三"></div><div class="mui-input-row"><label class="latext">工号：</label><input type="text" class="mui-input-clear" value="1234567890"></div><div class="mui-input-row"><label class="latext">时间：</label><input type="text" class="mui-input-clear" value="2016/6/16 am7:55" disabled="disabled"></div><div><h4 style="padding: 11px 15px; color: #8F8F94;">位置</h4><div class="mui-card"><img src="images/weizhi.jpg" style=" width: 100%; height: auto;display: block;"/></div></div><div class="mui-button-row" style="margin: 30px 15px;"><button id="toastBtn" type="button" class="mui-btn mui-btn-green  mui-btn-block">打卡</button></div></form>';
+				//				var html3 = '<form class="mui-input-group" style="text-align: center;overflow: auto;"><div class="mui-input-row"><label class="latext">姓名：</label><input type="text" class="mui-input-clear" value="张三"></div><div class="mui-input-row"><label class="latext">工号：</label><input type="text" class="mui-input-clear" value="1234567890"></div><div class="mui-input-row"><label class="latext">原班时间</label><input type="text" class="mui-input-clear" ></div><div class="mui-input-row"><label class="latext">调班时间</label><input type="text" class="mui-input-clear" ></div><textarea  rows="5" placeholder="申请事由"></textarea><div class="mui-button-row" style="margin: 30px 15px;"><button id="toastBtnb" type="button" class="mui-btn mui-btn-warning mui-btn-outlined">提交申请</button></div></form>';
+				//				var item2 = document.getElementById('item2mobile');
+				//				var item3 = document.getElementById('item3mobile');
+				//				document.getElementById('slider').addEventListener('slide', function(e) {
+				//					if (e.detail.slideNumber === 1) {
+				//						if (item2.querySelector('.mui-loading')) {
+				//							setTimeout(function() {
+				//								item2.querySelector('.mui-scroll').innerHTML = html2;
+				//							}, 500);
+				//						}
+				//					} else if (e.detail.slideNumber === 2) {
+				//						if (item3.querySelector('.mui-loading')) {
+				//							setTimeout(function() {
+				//								item3.querySelector('.mui-scroll').innerHTML = html3;
+				//							}, 500);
+				//						}
+				//					}
+				//				});
+				//				
+				//			})(mui);
+				document.addEventListener("plusready", onPlusReady, false);
+				// 扩展API加载完毕，现在可以正常调用扩展API;
+				function onPlusReady() {
+					plus.geolocation.getCurrentPosition(function(p) {
+						document.getElementById("places").innerHTML = p.addresses;
+					});
+				};
+				var dtPicker = new mui.DtPicker({
+					type: "date",
+				});
+				document.getElementById("timea").addEventListener("tap", function() {
+					dtPicker.show(function(selectItems) {
+						document.getElementById("timea").value = selectItems.y.value + "/" + selectItems.m.value + "/" + selectItems.d.value + "/"
+					});
+				});
+				document.getElementById("timeb").addEventListener("tap", function() {
+					dtPicker.show(function(selectItems) {
+						document.getElementById("timeb").value = selectItems.y.value + "/" + selectItems.m.value + "/" + selectItems.d.value + "/"
+					});
+				});
+				document.getElementById("timec").addEventListener("tap", function() {
+					dtPicker.show(function(selectItems) {
+						document.getElementById("timec").value = selectItems.y.value + "/" + selectItems.m.value + "/" + selectItems.d.value + "/"
+					});
+				});
+				document.getElementById("timed").addEventListener("tap", function() {
+					dtPicker.show(function(selectItems) {
+						document.getElementById("timed").value = selectItems.y.value + "/" + selectItems.m.value + "/" + selectItems.d.value + "/"
+					});
+				});
+				document.getElementById("btnup").addEventListener('tap', function() {
+				
+
+					plus.geolocation.getCurrentPosition(function(p) {
+						
+						document.getElementById("places").innerHTML = p.addresses;
+						var xpostion = p.coords.latitude;
+						var ypostion = p.coords.longitude;
+						var address = p.addresses;
+					
+								document.getElementById("worklist").innerHTML = "<li class='mui-table-view-cell'>上班<p>" + theTime() + document.getElementById("places").innerHTML + "</p></li>" + document.getElementById("worklist").innerHTML
+							
+						
+					});
+				
+				});
+				document.getElementById("btndown").addEventListener('tap', function() {
+
+					
+					plus.geolocation.getCurrentPosition(function(p) {
+						document.getElementById("places").innerHTML = p.addresses;
+						var xpostion = p.coords.latitude;
+						var ypostion = p.coords.longitude;
+						var address = p.addresses;
+						
+								document.getElementById("worklist").innerHTML = "<li class='mui-table-view-cell'>下班<p>" + theTime() + document.getElementById("places").innerHTML + "</p></li>" + document.getElementById("worklist").innerHTML
+							
+						});
+				});
+				document.getElementById("toastBtna").addEventListener('tap', function() {
+
+							mui.toast('你的申请已经提交');
+							mui.openWindow({
+										url: "service-review.html"
+					});
+				});
+				document.getElementById("toastBtnb").addEventListener('tap', function() {
+				
+							mui.toast('你的申请已经提交');
+							mui.openWindow({
+											url: "service-review.html"
+										})
+						
+				});
+			</script>
+	</body>
+
+</html>

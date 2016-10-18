@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/juicer-min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			.mui-media-object {
+				width: 42px;
+			}
+			
+			.latext {
+				color: #8F8F94;
+			}
+			
+			.mui-input-group {
+				margin-bottom: 5px;
+				border: 1px solid #DDDDDD;
+			}
+			
+			header.mui-bar {
+				background-color: #009FFF;
+			}
+			
+			header>a,
+			h1.mui-title {
+				color: #FFFFFF;
+			}
+			
+			.thingid {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:history.go(-1);"></a>
+			<h1 class="mui-title">下单支付</h1>
+		</header>
+		<script id="tpl" type="text/template">
+			<div class="mui-content">
+
+				<form method="post" style="margin-top:10px ;">
+
+					<div class="mui-input-group">
+						<div class="mui-input-row">
+							<label class="latext">姓名：</label>
+							<input type="text" name="name" class="mui-input-clear" value="张三">
+						</div>
+						<div class="mui-input-row">
+							<label class="latext">学院：</label>
+							<input type="text" name="great" class="mui-input-clear" value="信息电子学院">
+						</div>
+						<div class="mui-input-row">
+							<label class="latext">学号：</label>
+							<input type="text" name="numbers" class="mui-input-clear" value="1234567890">
+						</div>
+						<div class="mui-input-row">
+							<label class="latext">电话：</label>
+							<input type="text" name="phone" class="mui-input-clear" value="187627389475">
+						</div>
+
+						<div class="mui-input-row">
+							<label class="latext">寝室地址</label>
+							<input type="text" name="house" class="mui-input-clear" value="励志园区3幢304">
+							<textarea name="house" rows="2" cols="20"></textarea>
+						</div>
+					</div>
+					{@each data as it}
+					<div class="  mui-input-group">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+								<div class=" mui-checkbox">
+									$${it.main}
+								</div>
+							</li>
+							</ui>
+
+							<div class="mui-input-row">
+								<label class="latext">数量：</label>
+								<input type="text" name="number" class="mui-input-clear" value="${it.number}" disabled="disabled">
+							</div>
+
+							<div class="mui-input-row">
+								<label class="latext">总价：</label>
+								<input type="text" name="price" class="mui-input-clear" value="${it.price}元" disabled="disabled">
+							</div>
+					</div>
+					{@/each}
+
+					<div style="margin: 10px 0;">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">支付方式</a>
+								<div class="mui-collapse-content">
+									<form class="mui-input-group">
+										<div class="mui-input-row mui-radio">
+											<label class="latext">支付宝</label>
+											<input name="radio1" type="radio" checked>
+										</div>
+										<!--<div class="mui-input-row mui-radio">
+											<label class="latext">微信</label>
+											<input name="radio1" type="radio">
+										</div>-->
+										<div class="mui-input-row mui-radio" style="border-top:1px solid #D8D8D8 ;">
+											<label class="latext">网上银行</label>
+											<input name="radio1" type="radio">
+										</div>
+									</form>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-button-row " style="padding: 5px;background-color: #FFFFFF;overflow: hidden;border: 1px solid #DDDDDD;">
+
+						<div style="float: left;margin: 10px;color: #8F8F94;">
+							合计：<span style="color: #EC971F;font-style:oblique;" id="total">0</span> 元
+						</div>
+
+						<button id="toastBtn" type="button" class="mui-btn mui-btn-warning " style="float: right;margin:5px;">确认支付</button>
+					</div>
+
+				</form>
+
+			</div>
+
+		</script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function plusReady() {
+				var thingsbuy = plus.webview.currentWebview();
+				var data = {
+					"data": thingsbuy.things
+				};
+				var tpl = document.getElementById("tpl").innerHTML;
+				document.body.innerHTML = document.body.innerHTML + juicer(tpl, data);
+				document.getElementById("total").innerHTML = thingsbuy.total;
+				document.getElementById("toastBtn").addEventListener('tap', function() {
+
+					mui.toast('你的订单已经提交');
+					mui.openWindow({
+						url: "service-order.html",
+						id: "service-order.html",
+					});
+				});
+			};
+			document.addEventListener('plusready', plusReady, false);
+		</script>
+
+	</body>
+
+</html>

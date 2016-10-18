@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教务系统-课程详情</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../mui/mui.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/class_info.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="common-title">
+		<a id="back" class=""><</a>
+		课程详情
+	</div>
+	<!-- 内容 -->
+	<div id="class-content">
+		<div id="per-info">
+			<div id="class-name-warp">
+				<div id="class-name" class="clearfix">
+					<p id="class-title"></p>
+					<div class="triangle">三角形</div>
+				</div>
+				<ul id="c-name-select"></ul>
+			</div>
+			<div id="per-who" class="test">
+				<img id="per-photo" src="../images/qr_div_co.png">
+				<p id="per-name">名字名字</p>
+			</div>
+		</div>
+		<div id="subject">
+			<div class="subject-grade clearfix">
+				<p id="class-course" class="left"></p>
+				<p class="right">老师：<span id="class-teacher"></span></p>
+			</div>
+			<div class="subject-info clearfix">
+				<span class="right">学分：<em id="class-creditHour">2</em></span>
+				<p>上课地点：<span id="class-building"></span> <span id="class-room"></span></p>
+				<p>上课时间：<span id="class-pitchNo"></span></p>
+				<p>上课周数：<span id="class-week"></span></p>
+				<p>先行课程：<span id="class-guidingCourse"></span></p>
+				<p>课程介绍：</p>
+				<textarea id="class-courseIntroduction" readonly="readonly"></textarea>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

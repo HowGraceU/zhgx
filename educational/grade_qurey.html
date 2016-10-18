@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>教务系统-成绩查询</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../mui/mui.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript" src="js/grade_qurey.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="common-title">
+		<a id="back"><</a>
+		成绩查询
+	</div>
+	<!-- 内容 -->
+	<div id="grade-content">
+		<!-- 个人信息 -->
+		<div id="per-info" class="clearfix">
+			<div id="term" class="term left">
+				<p class="left"></p>
+				<div class="triangle left">三角形</div>
+			</div>
+			<ul id="term-select" class="term"></ul>
+			<div id="per-who" class="left">
+				<img id="per-photo" src="../images/qr_div_co.png">
+				<p id="per-name"></p>
+			</div>
+			<div id="credit" class="left">
+				<p id="ave-credit"></p>
+				<span>(平均绩点)</span>
+			</div>
+		</div>
+		<!-- 科目 -->
+		<ul id="subject"></ul>
+	</div>
+</body>
+</html>

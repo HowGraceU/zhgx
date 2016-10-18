@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>智慧高校 - 个人信息维护</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/personal_information.js"></script>
+<!-- mui日期选择器 -->
+<script type="text/javascript" src='mui/mui.min.js'></script>
+<script type="text/javascript" src='mui/mui.picker.min.js'></script>
+<link rel="stylesheet" type="text/css" href="mui/mui.picker.min.css">
+</head>
+
+<body>
+<div class="wrap_header">
+  <span class="jt mui-action-back"></span>
+  <span>个人信息维护</span>
+</div>
+
+<article class="page">
+  <section class="wrap h100" style="overflow: hidden; ">
+    
+    <!--主体-->
+    <div class="personal_information_nav">
+      <a class="active" href="javascript:;">个人信息</a>
+      <a href="javascript:;">个人经历</a>
+      <a href="javascript:;">家庭信息</a>
+    </div>
+    <div class="school_plan_co transition h100">
+      <div id="student" class="school_plan over_scroll">
+        <ul class="school_plan1 personal_information">
+          <li id="lqNo">
+            <span>录取号</span>
+            <span class="textRight"></span>
+          </li>
+          <li id="collegeName">
+            <span>学院</span>
+            <span class="textRight"></span>
+          </li>
+          <li id="majorName">
+            <span>专业</span>
+            <span class="textRight"></span>
+          </li>
+          <li id="name">
+            <span>姓名</span>
+            <span class="textRight"></span>
+          </li>
+          <li id="sex">
+            <span>性别</span>
+            <span class="textRight"></span>
+          </li>
+          <li id="nation">
+            <span>民族</span>
+            <span class="textRight"></span>
+          </li>
+          <li id="zzmm">
+            <span>政治面貌</span>
+            <span class="textRight"></span>
+          </li>
+          <li id="birthday">
+            <span>出生年月</span>
+            <span class="textRight"></span>
+          </li>
+          <li id="idCard">
+            <span>身份证</span>
+            <span class="textRight"></span>
+          </li>
+          <li id="healthStatus">
+            <span>健康状况</span>
+            <input type="text" />
+          </li>
+          <li id="isChineseResi">
+            <span>是否侨胞</span>
+            <a href="javascript:;"><em></em>是</a>
+            <a href="javascript:;"><em></em>否</a>
+          </li>
+          <li id="accountNature">
+            <span>户口性质</span>
+            <a href="javascript:;"><em></em>农业</a>
+            <a href="javascript:;"><em></em>非农</a>
+            <a href="javascript:;"><em></em>其他</a>
+          </li>
+          <li id="homePhone">
+            <span>家庭电话</span>
+            <input type="telephone" placeholder="请输入家庭电话" />
+          </li>
+          <div class="warning" style="display:none;">请输入正确的电话</div>
+          <li id="homeAdress">
+            <span>家庭地址</span>
+            <input type="text" placeholder="请输入家庭地址" />
+          </li>
+        </ul>
+        <a id="save_button" href="javascript:;">保存个人信息</a>
+      </div>
+      
+      <div id="studentEducation" class="school_plan over_scroll">
+        <ul class="school_plan1 personal_information personal_information2">
+          <li>
+            <span>开始时间</span>
+            <input class="startTime" type="text" placeholder="请输入开始时间" readonly="readonly" />
+            <a class="clear-input">+</a>
+          </li>
+          <li>
+            <span>结束时间</span>
+            <input class="endTime" type="text" placeholder="请输入结束时间" readonly="readonly" />
+            <a class="clear-input">+</a>
+          </li>
+          <div class="warning" style="display:none;">结束时间应大于开始时间</div>
+          <li>
+            <span>学校或单位</span>
+            <input class="school" type="text" placeholder="请输入学校或单位" />
+          </li>
+          <li>
+            <span>证明人</span>
+            <input class="witness" type="text" placeholder="证明人单位、任职、政治面貌" />
+          </li>
+          
+          <li>
+            <span>开始时间</span>
+            <input class="startTime" type="text" placeholder="请输入开始时间" readonly="readonly" />
+            <a class="clear-input">+</a>
+          </li>
+          <li>
+            <span>结束时间</span>
+            <input class="endTime" type="text" placeholder="请输入结束时间" readonly="readonly" />
+            <a class="clear-input">+</a>
+          </li>
+          <div class="warning" style="display:none;">结束时间应大于开始时间</div>
+          <li>
+            <span>学校或单位</span>
+            <input class="school" type="text" placeholder="请输入学校或单位" />
+          </li>
+          <li>
+            <span>证明人</span>
+            <input class="witness" type="text" placeholder="证明人单位、任职、政治面貌" />
+          </li>
+          
+          <li>
+            <span>开始时间</span>
+            <input class="startTime" type="text" placeholder="请输入开始时间" readonly="readonly" />
+            <a class="clear-input">+</a>
+          </li>
+          <li>
+            <span>结束时间</span>
+            <input class="endTime" type="text" placeholder="请输入结束时间" readonly="readonly" />
+            <a class="clear-input">+</a>
+          </li>
+          <div class="warning" style="display:none;">结束时间应大于开始时间</div>
+          <li>
+            <span>学校或单位</span>
+            <input class="school" type="text" placeholder="请输入学校或单位" />
+          </li>
+          <li>
+            <span>证明人</span>
+            <input class="witness" type="text" placeholder="证明人单位、任职、政治面貌" />
+          </li>
+          
+          <li>
+            <span>开始时间</span>
+            <input class="startTime" type="text" placeholder="请输入开始时间" readonly="readonly" />
+            <a class="clear-input">+</a>
+          </li>
+          <li>
+            <span>结束时间</span>
+            <input class="endTime" type="text" placeholder="请输入结束时间" readonly="readonly" />
+            <a class="clear-input">+</a>
+          </li>
+          <div class="warning" style="display:none;">结束时间应大于开始时间</div>
+          <li>
+            <span>学校或单位</span>
+            <input class="school" type="text" placeholder="请输入学校或单位" />
+          </li>
+          <li>
+            <span>证明人</span>
+            <input class="witness" type="text" placeholder="证明人单位、任职、政治面貌" />
+          </li>
+        </ul>
+        <a id="save_button" href="javascript:;">保存个人经历</a>
+      </div>
+      
+      <div id="studentFamily" class="school_plan over_scroll">
+        <ul class="school_plan1 personal_information personal_information2">
+          <li>
+            <span>姓名</span>
+            <input class="name" type="text" placeholder="请输入姓名" />
+          </li>
+          <li>
+            <span>关系</span>
+            <input class="relation" type="text" placeholder="请输入关系" />
+          </li>
+          <li>
+            <span>工作单位</span>
+            <input class="company" type="text" placeholder="请输入工作单位" />
+          </li>
+          <li>
+            <span>联系电话</span>
+            <input class="linkMode" type="telephone" placeholder="请输入联系电话" />
+          </li>
+          <div class="warning" style="display:none;">请输入正确的电话</div>
+          
+          <li>
+            <span>姓名</span>
+            <input class="name" type="text" placeholder="请输入姓名" />
+          </li>
+          <li>
+            <span>关系</span>
+            <input class="relation" type="text" placeholder="请输入关系" />
+          </li>
+          <li>
+            <span>工作单位</span>
+            <input class="company" type="text" placeholder="请输入工作单位" />
+          </li>
+          <li>
+            <span>联系电话</span>
+            <input class="linkMode" type="telephone" placeholder="请输入联系电话" />
+          </li>
+          <div class="warning" style="display:none;">请输入正确的电话</div>
+          
+          <li>
+            <span>姓名</span>
+            <input class="name" type="text" placeholder="请输入姓名" />
+          </li>
+          <li>
+            <span>关系</span>
+            <input class="relation" type="text" placeholder="请输入关系" />
+          </li>
+          <li>
+            <span>工作单位</span>
+            <input class="company" type="text" placeholder="请输入工作单位" />
+          </li>
+          <li>
+            <span>联系电话</span>
+            <input class="linkMode" type="telephone" placeholder="请输入联系电话" />
+          </li>
+          <div class="warning" style="display:none;">请输入正确的电话</div>
+          
+          <li>
+            <span>姓名</span>
+            <input class="name" type="text" placeholder="请输入姓名" />
+          </li>
+          <li>
+            <span>关系</span>
+            <input class="relation" type="text" placeholder="请输入关系" />
+          </li>
+          <li>
+            <span>工作单位</span>
+            <input class="company" type="text" placeholder="请输入工作单位" />
+          </li>
+          <li>
+            <span>联系电话</span>
+            <input class="linkMode" type="telephone" placeholder="请输入联系电话" />
+          </li>
+          <div class="warning" style="display:none;">请输入正确的电话</div>
+        </ul>
+        <a id="save_button" href="javascript:;">保存家庭信息</a>
+      </div>
+    </div>
+
+  </section>
+</article>
+<div id="save_success" style="display: none">保存成功</div>
+</body>
+</html>

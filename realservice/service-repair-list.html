@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/mui.min.css">
+		<style>
+			.mui-table h4,.mui-table h5,.mui-table .mui-h5,.mui-table .mui-h6,.mui-table p{
+		        margin-top: 0;
+		    }
+		    .mui-table h4{
+		        line-height: 21px;
+		        font-weight: 500;
+		    }
+		
+		    .mui-table .oa-icon{
+		        position: absolute;
+		        right:0;
+		        bottom: 0;
+		    }
+		    .mui-table .oa-icon-star-filled{
+		        color:#f14e41;
+		    }
+		    header.mui-bar{background-color: #009FFF;}
+			header>a,h1.mui-title{color: #FFFFFF;font-size: 800;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">报修系统</h1>
+		</header>
+		<div class="mui-content">
+			<a class="mui-btn mui-btn-green mui-btn-block" style="margin: 20px;width: 90%;" id="repair">报修申请</a>
+		    <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+		        <li class="mui-table-view-cell" id="repairli">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">报修订单详情</h4>
+		                    <h5>申请人：张三</h5>
+		                    <p class="mui-h6 mui-ellipsis">寝室椅子维修...</p>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                	<span class="mui-h5" style="color: #F14E41;">处理中</span>
+		                </div>
+		            </div>
+		        </li>
+		        <li class="mui-table-view-cell" id="repairlio">
+		            <div class="mui-table">
+		               <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">报修订单详情</h4>
+		                    <h5>申请人：张三</h5>
+		                    <p class="mui-h6 mui-ellipsis">寝室厕所下水道维修...</p>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span class="mui-h5" style="color: #2AC845">已完成</span>
+		                   </div>
+		            </div>
+		        </li>
+		         <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		               <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">报修订单详情</h4>
+		                    <h5>申请人：张三</h5>
+		                    <p class="mui-h6 mui-ellipsis">寝室网络线路维修...</p>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span class="mui-h5" style="color: #2AC845">已完成</span>
+		                   </div>
+		            </div>
+		        </li>
+		         <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		               <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">报修订单详情</h4>
+		                    <h5>申请人：张三</h5>
+		                    <p class="mui-h6 mui-ellipsis">寝室空调维修...</p>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span class="mui-h5" style="color: #2AC845">已完成</span>
+		                   </div>
+		            </div>
+		        </li>
+		         <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		               <div class="mui-table-cell mui-col-xs-10">
+		                    <h4 class="mui-ellipsis">报修订单详情</h4>
+		                    <h5>申请人：张三</h5>
+		                    <p class="mui-h6 mui-ellipsis">寝室门窗维修...</p>
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-2 mui-text-right">
+		                    <span class="mui-h5" style="color: #2AC845">已完成</span>
+		                   </div>
+		            </div>
+		        </li>
+		    </ul>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		document.getElementById("repair").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-repair.html",
+					id: "service-repair.html",
+				});
+			});
+			document.getElementById("repairli").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-repair-more.html",
+					id: "service-repair-more.html",
+				});
+			});
+			document.getElementById("repairlio").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-repair-more1.html",
+					id: "service-repair-more1.html",
+				});
+			});
+	</script>
+</html>

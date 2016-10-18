@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>智慧高校 - 关于智慧高校</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="mui/mui.min.js" ></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$.getJSON('manifest.json',function(json){
+		if( json.version.name ){
+			$('.my_co p span').text(json.version.name);
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<article class="page">
+  <section class="wrap">
+    <div class="wrap_header">
+      <span class="jt mui-action-back"></span>
+      <span>关于智慧高校</span>
+    </div>
+    
+    <!--主体-->
+    <div class="my">
+      <div class="my_co">
+        <p><em>版本号</em><span class="right"></span></p></div>
+      </div>
+    <!--主体 end-->
+  </section>
+</article>
+</body>
+</html>

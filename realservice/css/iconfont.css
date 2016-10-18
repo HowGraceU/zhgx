@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "iconfont";
+	src: url('../fonts/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+}
+
+.icon-chuzu:before { content: "\e62b"; }
+.icon-20140512104425887easyiconnet:before { content: "\e622"; }
+.icon-unie65b:before { content: "\e623"; }
+.icon-shuidianmei:before { content: "\e624"; }
+.icon-qqyinyuemusic1193404easyiconnet:before { content: "\e600"; }
+.icon-unie6b92:before { content: "\e601"; }
+.icon-unie6f4:before { content: "\e602"; }
+.icon-unie66f:before { content: "\e603"; }
+.icon-unie650:before { content: "\e604"; }
+.icon-unie706:before { content: "\e605"; }
+.icon-unie707:before { content: "\e606"; }
+.icon-unie716:before { content: "\e607"; }
+.icon-unie6662:before { content: "\e608"; }
+.icon-unie6682:before { content: "\e609"; }
+.icon-untitled4:before { content: "\e60a"; }
+.icon-laptop:before { content: "\e60b"; }
+.icon-mobile:before { content: "\e60c"; }
+.icon-untitled62:before { content: "\e60d"; }
+.icon-untitled91:before { content: "\e60e"; }
+.icon-untitled3:before { content: "\e60f"; }
+.icon-untitled41:before { content: "\e610"; }
+.icon-untitled17:before { content: "\e611"; }
+.icon-untitled18:before { content: "\e612"; }
+.icon-untitled33:before { content: "\e613"; }
+.icon-untitled34:before { content: "\e614"; }
+.icon-untitled38:before { content: "\e615"; }
+.icon-untitled78:before { content: "\e616"; }
+.icon-untitled107:before { content: "\e617"; }
+.icon-untitled111:before { content: "\e618"; }
+.icon-untitled112:before { content: "\e619"; }
+.icon-untitled97:before { content: "\e61a"; }
+.icon-untitled98:before { content: "\e61b"; }
+.icon-untitled102:before { content: "\e61c"; }
+.icon-untitled103:before { content: "\e61d"; }
+.icon-untitled104:before { content: "\e61e"; }
+.icon-untitled137:before { content: "\e61f"; }
+.icon-untitled151:before { content: "\e620"; }
+.icon-untitled152:before { content: "\e621"; }
+.icon-shape11:before { content: "\e625"; }
+.icon-chuangf:before { content: "\e626"; }
+.icon-chuang:before { content: "\e62c"; }
+.icon-shouhuo:before { content: "\e627"; }
+.icon-07:before { content: "\e628"; }
+.icon-yanshi:before { content: "\e629"; }
+.icon-zhusu:before { content: "\e62a"; }
+

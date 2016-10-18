@@ -1,0 +1,280 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+  <script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			header.mui-bar{background-color: #009FFF;}
+			header>a,h1.mui-title{color: #FFFFFF;}
+			.mui-active>a.mui-navigate-right{background-color: #8A6DE9;color: #FFFFFF;}
+		</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" ></a>
+	    <h1 class="mui-title">预约用车</h1>
+	</header>
+	
+	<div class="mui-content">
+	 <div class="mui-card">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-collapse mui-active">
+						<a class="mui-navigate-right" href="#" >下沙校区->文一校区 pm5:00<span id="span"></span></a>
+						<div class="mui-collapse-content">
+							<form class="mui-input-group">
+								<div class="mui-input-row">
+									<label>班车时间</label>
+									<input type="text" placeholder="pm5:00" disabled="disabled">
+								</div>
+								
+								<div class="mui-input-row">
+									<label>班车路线</label>
+									<input type="text" placeholder="下沙校区->文一校区" disabled="disabled">
+								</div>
+								
+								<div class="mui-input-row">
+									<label>剩余人数</label>
+									<input type="text" placeholder="20人" disabled="disabled">
+								</div>
+								<div class="mui-button-row">
+									<button class="mui-btn mui-btn-warning" type="button">联系司机</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<button class="mui-btn mui-btn-primary" type="button" id="ybtn">预约</button>&nbsp;&nbsp;
+									<button class="mui-btn mui-btn-danger" type="button" id="qbtn">取消</button>
+								</div>
+							</form>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">文一校区->下沙校区 am7:00<span id="span1"></span></a>
+						<div class="mui-collapse-content">
+							<form class="mui-input-group">
+								<div class="mui-input-row">
+									<label>班车时间</label>
+									<input type="text" placeholder="pm5:00" disabled="disabled">
+								</div>
+								
+								<div class="mui-input-row">
+									<label>班车路线</label>
+									<input type="text" placeholder="文一校区->下沙校区" disabled="disabled">
+								</div>
+								
+								<div class="mui-input-row">
+									<label>剩余人数</label>
+									<input type="text" placeholder="20人" disabled="disabled">
+								</div>
+								<div class="mui-button-row">
+									<button class="mui-btn mui-btn-warning" type="button">联系司机</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<button class="mui-btn mui-btn-primary" type="button" id="ybtn1">预约</button>&nbsp;&nbsp;
+									<button class="mui-btn mui-btn-danger" type="button" id="qbtn1">取消</button>
+								</div>
+							</form>
+						</div>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">下沙校区->文一校区 am7:00<span id="span2"></span></a>
+						<div class="mui-collapse-content">
+							<form class="mui-input-group">
+								<div class="mui-input-row">
+									<label>班车时间</label>
+									<input type="text" placeholder="am5:00" disabled="disabled">
+								</div>
+								
+								<div class="mui-input-row">
+									<label>班车路线</label>
+									<input type="text" placeholder="下沙校区->文一校区" disabled="disabled">
+								</div>
+								
+								<div class="mui-input-row">
+									<label>剩余人数</label>
+									<input type="text" placeholder="20人" disabled="disabled">
+								</div>
+								<div class="mui-button-row">
+									<button class="mui-btn mui-btn-warning" type="button">联系司机</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<button class="mui-btn mui-btn-primary" type="button" id="ybtn2">预约</button>&nbsp;&nbsp;
+									<button class="mui-btn mui-btn-danger" type="button" id="qbtn2">取消</button>
+								</div>
+							</form>
+						</div>
+					</li>
+	    
+	</div>
+	
+	<script type="text/javascript">
+//		document.getElementById("toastBtn").addEventListener('tap', function() {
+//				mui.toast('充值完成');
+//			});
+document.getElementById("ybtn").addEventListener("tap",function(){
+	document.getElementById("span").innerHTML="(已预约)"
+	
+});
+document.getElementById("qbtn").addEventListener("tap",function(){
+	document.getElementById("span").innerHTML="(已取消)"
+});
+document.getElementById("ybtn1").addEventListener("tap",function(){
+	document.getElementById("span1").innerHTML="(已预约)"
+});
+document.getElementById("qbtn1").addEventListener("tap",function(){
+	document.getElementById("span1").innerHTML="(已取消)"
+});
+document.getElementById("ybtn2").addEventListener("tap",function(){
+	document.getElementById("span2").innerHTML="(已预约)"
+});
+document.getElementById("qbtn2").addEventListener("tap",function(){
+	document.getElementById("span2").innerHTML="(已取消)"
+});
+	</script>
+	
+</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			.mui-toast-container {
+				margin-bottom: 20px;
+			}
+			
+			.mui-col-xs-3 {
+				color: #8A6DE9;
+			}
+			
+			header.mui-bar {
+				background-color: #009FFF;
+			}
+			
+			header>a,
+			h1.mui-title {
+				color: #FFFFFF;
+			}
+			.mui-col-xs-9>li{padding: 0 10px;}
+			.mui-col-xs-9>.mui-radio{padding: 10px;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">预约用车</h1>
+		</header>
+
+		<div class="mui-content">
+
+			<form style="background-color: #efeff4;">
+				<div class="mui-table mui-input-group" style="padding:1px 5px;background-color: #FFFFFF;margin: 10px 0;">
+					<h4 class="mui-table-cell mui-col-xs-3">个人信息</h4>
+					<ul class="mui-table-view mui-table-cell mui-col-xs-9">
+						<li class="mui-table-view-cell">
+							<input type="text" class="mui-input-clear" placeholder="姓名">
+						</li>
+						<!--<li class="mui-table-view-cell mui-radio mui-left">
+							<input name="radio" type="radio">男
+							
+						</li>
+						<li class="mui-table-view-cell mui-radio mui-left">
+							
+							<input name="radio" type="radio">女
+						</li>-->
+						<li class="mui-table-view-cell">
+							<input type="text" class="mui-input-clear" placeholder="部门职位">
+						</li>
+						<li class="mui-table-view-cell">
+							<input type="text" class="mui-input-clear" placeholder="联系方式">
+						</li>
+					</ul>
+				</div>
+				<div class="mui-table mui-input-group" style="padding:2px 5px;background-color: #FFFFFF;margin:10px 0;">
+					<h4 class="mui-table-cell mui-col-xs-3">用车详情</h4>
+					<ul class="mui-table-view mui-table-cell mui-col-xs-9">
+						<!--<li class="mui-table-view-cell mui-radio mui-left">
+							<input name="radio1" type="radio">零星住宿
+						</li>
+
+						<li class="mui-table-view-cell mui-radio mui-left">
+							<input name="radio1" type="radio">进修住宿
+						</li>-->
+						<li class="mui-table-view-cell">
+							<input type="text" class="mui-input-clear" placeholder="出发地点">
+						</li>
+						<li class="mui-table-view-cell">
+							<input type="text" class="mui-input-clear" placeholder="目的地点">
+						</li>
+						<li class="mui-table-view-cell">
+							<input type="text" class="mui-input-clear" placeholder="用车人数">
+						</li>
+						<li class="mui-table-view-cell" style="padding: 10px 0;">
+							<input type="text" class="mui-input-clear" placeholder="约车时间" id="timein" style="padding: 10px 0;"/>
+						</li>
+						<!--<li class="mui-table-view-cell" style="padding: 10px 0;">
+							<input type="text" class="mui-input-clear" placeholder="退宿时间" id="timeout" style="padding: 10px 0;"/>
+						</li>-->
+					</ul>
+					<!--<div class=" mui-table-cell mui-col-xs-9">
+	            	
+	            	<input type="text" class="mui-input-clear" placeholder="姓名">
+	        	</div>
+	        	
+	        	<div class=" mui-table-cell mui-col-xs-9">
+	           
+	            	<input type="text" class="mui-input-clear" placeholder="学号">
+	        	</div>
+	        	
+	        	<div class=" mui-table-cell mui-col-xs-9">
+	            	
+	            	<input type="text" class="mui-input-clear" placeholder="宿舍地址">
+	        	</div>-->
+				</div>
+
+				<div class="mui-input-group">
+					<textarea rows="5" placeholder="备注" style="background-color: #FFFFFF;"></textarea>
+
+					<div class="mui-button-row">
+
+						<button id="toastBtn" type="button" class="mui-btn mui-btn-blue mui-btn-outlined">提交</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById("toastBtn").addEventListener('tap', function() {
+				mui.toast('你的申请已经提交');
+				mui.openWindow({
+					url: "service-review.html"
+				});
+			});
+			var dtPicker = new mui.DtPicker({
+				type: "hour",
+			});
+			document.getElementById("timein").addEventListener("tap", function() {
+				dtPicker.show(function(selectItems) {
+					document.getElementById("timein").value = "约车时间：" + selectItems.y.value + "年" + selectItems.m.value + "月" + selectItems.d.value + "日" + selectItems.h.value + "时"
+				});
+			});
+//			document.getElementById("timeout").addEventListener("tap", function() {
+//				dtPicker.show(function(selectItems) {
+//					document.getElementById("timeout").value = "退宿时间：" + selectItems.y.value + "年" + selectItems.m.value + "月" + selectItems.d.value + "日" + selectItems.h.value + "时"
+//				});
+//			});
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+"datast":{
+"id":	"aaaaaaaaaaa",
+"uid"	:"zhangsan",
+"xcode":"201520101001",
+"name"	:"蔡佳烨",
+"idcard":"330108199308310229",
+"gender":"女",
+"nation":"汉",
+"mobile":"18814862937",
+"specialty"	:"应用心理学",
+"year":"2015",
+"address":	"拱墅区密度桥路2号",
+"fphone":	"0571-87283762"	
+},
+"datawk":{
+"id":"bbbbbbb",
+"uid":"lisi",
+"gid"	:"123456789",
+"name"	:"李四",
+"gender":"男",
+"type":"职工",
+"jobName":"宿管员",
+"idcard":"123456789000298372",
+"mobile":"12385969473",
+"remark":""
+}
+}

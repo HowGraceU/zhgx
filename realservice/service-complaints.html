@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			.mui-toast-container {
+				margin-bottom: 20px;
+			}
+			header.mui-bar{background-color: #009FFF;}
+			header>a,h1.mui-title{color: #FFFFFF;}
+			.mui-table-view-cell>input.mui-input-clear{padding: 0 15px;}
+			.mui-col-xs-3{color: #8A6DE9;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">投诉上报</h1>
+		</header>
+
+		<div class="mui-content">
+
+			<form style="background-color: #efeff4;">
+				<div class="mui-table mui-input-group" style="padding:1px 5px;background-color: #FFFFFF;margin: 10px 0;">
+					<h4 class="mui-table-cell mui-col-xs-3">个人信息</h4>
+					<ul class="mui-table-view mui-table-cell mui-col-xs-9">
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input type="text" class="mui-input-clear" value="姓名：张三">
+						</li>
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input type="text" class="mui-input-clear" value="班级：软件工程121">
+						</li>
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input type="text" class="mui-input-clear" value="院系：信息电子学院">
+						</li>
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input type="text" class="mui-input-clear" value="学号：1234567890">
+						</li>
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input type="text" class="mui-input-clear" value="电话：187627389475">
+						</li>
+						
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input type="text" class="mui-input-clear" value="寝室：励志园3幢403一号床">
+						</li>
+					</ul>
+				</div>
+				<div class="mui-table mui-input-group" style="padding:2px 10px;background-color: #FFFFFF;margin:10px 0;">
+					<h4 class=" mui-col-xs-3">拍照举证</h4><br />
+					<div >
+				
+							<a href="##" >
+								<img src="images/paizhao.png" class="mui-col-xs-3" style="margin:0 12px;"/>
+								<img src="images/paizhao.png" class="mui-col-xs-3" style="margin:0 12px;"/>
+								<img src="images/paizhao.png" class="mui-col-xs-3" style="margin:0 12px;"/>
+							</a>
+					
+
+						
+					</div>
+					
+				</div>
+
+				<div class="mui-input-group">
+					<textarea rows="5" placeholder="投诉详情" style="background-color: #FFFFFF;"></textarea>
+
+					<div class="mui-button-row">
+
+						<button id="toastBtn" type="button" class="mui-btn mui-btn-blue mui-btn-outlined">上报提交</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById("toastBtn").addEventListener('tap', function() {
+				mui.toast('你的申请已经提交');
+				mui.openWindow({
+					url:"service-review.html"
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

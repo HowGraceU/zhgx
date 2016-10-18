@@ -1,0 +1,94 @@
+######################################################################################################
+# file： change_log
+# module: zhgx_hangzhou_app
+# desc: 
+#      该文件用于记录本模块的详细修改记录，根据版本制作的要求，该文件必须放在本模块源代码的根目录下
+#      每次创建新的TAG时候，需要在本文件的尾部，增加如下类似的修改说明，其中TAG名称必须和实际提交的TAG
+#      名称一致，否则，版本生成不会成功
+######################################################################################################
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160617A as following:
+
+#2016/06/17
+实现迎新模块
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160630A as following:
+
+#2016/06/30
+首页调整修改，新增消息、通讯录、我的模块
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160706A as following:
+
+#2016/07/06
+首页新闻实现动态加载，完成消息、通讯录模块
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160711A as following:
+
+#2016/07/11
+修改bug(ZHGX_HZCM_1-13、 ZHGX_HZCM_1-14、 ZHGX_HZCM_1-22、 ZHGX_HZCM_1-23、 ZHGX_HZCM_1-25、
+ZHGX_HZCM_1-26、 ZHGX_HZCM_1-27、 ZHGX_HZCM_1-28)
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160725A as following:
+
+#2016/07/25
+修改bug/新闻展示新增排序/ios白屏问题解决/该版本为目前比较稳定的版本。
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160727A as following:
+
+#2016/07/27
+修改bug(ZHGX_HZCM_1-49、 ZHGX_HZCM_1-50、ZHGX_HZCM_1-51、ZHGX_HZCM_1-52、ZHGX_HZCM_1-53)。
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160728A as following:
+
+#2016/07/28
+修改bug(ZHGX_HZCM_1-53、 ZHGX_HZCM_1-54)
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160812A as following:
+
+#2016/08/12
+1、首页、消息图片实现懒加载。
+2、增加页面切换动画。
+3、首页高校动态实现分页。消息实现分页。
+4、通讯录实现数据字典。
+5、界面优化
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160818A as following:
+
+#2016/08/18
+修改bug(ZHGX_HZCM_1-62、 ZHGX_HZCM_1-63、ZHGX_HZCM_1-64、ZHGX_HZCM_1-65、 ZHGX_HZCM_1-66、
+ZHGX_HZCM_1-67、ZHGX_HZCM_1-68、ZHGX_HZCM_1-69、ZHGX_HZCM_1-70、 ZHGX_HZCM_1-72、 ZHGX_HZCM_1-74)
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160819A as following:
+
+#2016/08/19
+修改bug(ZHGX_HZCM_1-60、ZHGX_HZCM_1-68、ZHGX_HZCM_1-69、ZHGX_HZCM_1-77、ZHGX_HZCM_1-78、
+ZHGX_HZCM_1-79、ZHGX_HZCM_1-82、ZHGX_HZCM_1-83、ZHGX_HZCM_1-87、ZHGX_HZCM_1-88、
+ZHGX_HZCM_1-89、ZHGX_HZCM_1-90、ZHGX_HZCM_1-91、ZHGX_HZCM_1-92、ZHGX_HZCM_1-94)
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160828A as following:
+
+#2016/08/28
+修改bug(ZHGX_HZCM_1-82、ZHGX_HZCM_1-88)
+测试环境包
+
+#Changes for zhgx_hangzhou_app_dev_v1.0.0_20160908A as following:
+
+#2016/09/08
+稳定的迎新App
+
+#Changes for zhgx_hangzhou_app_dev_v2.0.0_20160928A as following:
+
+#2016/09/28
+修改bug(ZHGX_HZCM_1-129、ZHGX_HZCM_1-84、ZHGX_HZCM_1-124、ZHGX_HZCM_1-126、ZHGX_HZCM_1-86、
+ZHGX_HZCM_1-123、ZHGX_HZCM_1-109、ZHGX_HZCM_1-115、ZHGX_HZCM_1-116、ZHGX_HZCM_1-120、ZHGX_HZCM_1-121、
+ZHGX_HZCM_1-122、ZHGX_HZCM_1-125、ZHGX_HZCM_1-128、ZHGX_HZCM_1-130、ZHGX_HZCM_1-127、ZHGX_HZCM_1-131)
+
+#Changes for zhgx_hangzhou_app_dev_v2.0.0_20161009A as following:
+
+#2016/10/09
+修改bug(ZHGX_HZCM_1-133、ZHGX_HZCM_1-135、ZHGX_HZCM_1-136、ZHGX_HZCM_1-137、ZHGX_HZCM_1-138、ZHGX_HZCM_1-139、ZHGX_HZCM_1-140)
+
+#Changes for zhgx_hangzhou_app_dev_v2.0.0_20161010A as following:
+
+#2016/10/10
+修改bug(ZHGX_HZCM_1-142、ZHGX_HZCM_1-143、ZHGX_HZCM_1-144)

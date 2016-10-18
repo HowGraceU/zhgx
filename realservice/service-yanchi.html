@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			.mui-toast-container {
+				margin-bottom: 20px;
+			}
+			
+			header.mui-bar {
+				background-color: #009FFF;
+			}
+			
+			header>a,
+			h1.mui-title {
+				color: #FFFFFF;
+			}
+			
+			.mui-table-view-cell>input.mui-input-clear {
+				padding: 0 15px;
+				font-size: medium;
+			}
+			
+			.mui-col-xs-3 {
+				color: #8A6DE9;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">延迟退宿</h1>
+		</header>
+
+		<div class="mui-content">
+
+			<form style="background-color: #efeff4;text-align: center;">
+
+				<div class="mui-table mui-input-group" style="padding:1px 5px;background-color: #FFFFFF;margin: 10px 0;">
+					<h4 class="mui-table-cell mui-col-xs-3">个人信息</h4>
+					<ul class="mui-table-view mui-table-cell mui-col-xs-9">
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input name="name" type="text" class="mui-input-clear" value="姓名：张三">
+						</li>
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input name="great" type="text" class="mui-input-clear" value="专业：信息电子学院">
+						</li>
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input name="number" type="text" class="mui-input-clear" value="学号：1234567890">
+						</li>
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input name="phone" type="text" class="mui-input-clear" value="电话：187627389475">
+						</li>
+
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input name="house" type="text" class="mui-input-clear" value="寝室：励志园3幢403一号床">
+						</li>
+					</ul>
+				</div>
+				<div class="mui-table mui-input-group" style="padding:2px 5px;background-color: #FFFFFF;margin:10px 0;">
+					<h4 class="mui-table-cell mui-col-xs-3">延退时间</h4>
+					<ul class="mui-table-view mui-table-cell mui-col-xs-9">
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input type="text" class="mui-input-clear" placeholder="原退宿时间" id="time1">
+						</li>
+						<li class="mui-table-view-cell" style="padding: 0 ;">
+							<input type="text" class="mui-input-clear" placeholder="申请延退时间" id="time" />
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="mui-input-group">
+					<textarea rows="5" placeholder="申请理由" style="background-color: #FFFFFF;" id="text"></textarea>
+
+					<div class="mui-button-row">
+
+						<button id="toastBtn" type="button" class="mui-btn mui-btn-blue mui-btn-outlined">提交</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+
+			document.getElementById("time").addEventListener('tap', function() {
+				var dtPicker = new mui.DtPicker({
+					type: "date",
+				});
+				dtPicker.show(function(selectItems) {
+					document.getElementById("time").value = selectItems.y.value + "/" + selectItems.m.value + "/" + selectItems.d.value
+				});
+			});
+			document.getElementById("time1").addEventListener('tap', function() {
+				var dtPicker = new mui.DtPicker({
+					type: "date",
+				});
+				dtPicker.show(function(selectItems) {
+
+					document.getElementById("time1").value = selectItems.y.value + "/" + selectItems.m.value + "/" + selectItems.d.value
+				});
+			});
+
+			document.getElementById("toastBtn").addEventListener('tap', function() {
+				
+						mui.toast('你的申请已经提交');
+							mui.openWindow({
+									url:"service-review.html"
+								});
+				});
+							
+		</script>
+
+	</body>
+
+</html>

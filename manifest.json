@@ -1,0 +1,786 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H548C69A0",
+	"name": "智慧高校",
+	"version": {
+		"name": "2.0",
+		"code": ""
+	},
+	"description": "",
+	"icons": {
+		"72": "icon.png"
+	},
+	"fullscreen": false,
+	"launch_path": "index.html",
+	"developer": {
+		"name": "",
+		"email": "",
+		"url": ""
+	},
+	"permissions": {
+		"Accelerometer": {
+			"description": "访问加速度感应器"
+		},
+		"Audio": {
+			"description": "访问麦克风"
+		},
+		"Messaging": {
+			"description": "短彩邮件插件"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Camera": {
+			"description": "访问摄像头"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Device": {
+			"description": "访问设备信息"
+		},
+		"Downloader": {
+			"description": "文件下载管理"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"File": {
+			"description": "访问本地文件系统"
+		},
+		"Gallery": {
+			"description": "访问系统相册"
+		},
+		"Geolocation": {
+			"description": "访问位置信息"
+		},
+		"Invocation": {
+			"description": "使用Native.js能力"
+		},
+		"Orientation": {
+			"description": "访问方向感应器"
+		},
+		"Proximity": {
+			"description": "访问距离感应器"
+		},
+		"Storage": {
+			"description": "管理应用本地数据"
+		},
+
+		"Uploader": {
+			"description": "管理文件上传任务"
+		},
+		"Runtime": {
+			"description": "访问运行期环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络访问"
+		},
+		"Zip": {
+			"description": "文件压缩与解压缩"
+		},
+		"Barcode": {
+			"description": "管理二维码扫描插件"
+		},
+		"Maps": {
+			"description": "管理地图插件"
+		},
+		"Speech": {
+			"description": "管理语音识别插件"
+		},
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"NativeObj": {
+			"description": "原生对象"
+		}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,
+			"waiting": true
+		},
+		"popGesture": "close",
+		"runmode": "normal",
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",
+		"distribute": {
+			"plugins": {
+				"push": {
+					
+				}
+			},
+			"apple": {
+				"appid": "",
+				"mobileprovision": "",
+				"password": "",
+				"p12": "",
+				"devices": "universal",
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",
+				"keystore": "",
+				"password": "",
+				"aliasname": "",
+				"permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>"]
+			},
+			"orientation": [
+				"portrait-primary"
+			],
+			"icons": {
+				"ios": {
+					"prerendered": true,
+					"auto": "",
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png",
+						"retina": "unpackage/res/icons/114x114.png",
+						"retina7": "unpackage/res/icons/120x120.png",
+						"spotlight-normal": "unpackage/res/icons/29x29.png",
+						"spotlight-retina": "unpackage/res/icons/58x58.png",
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",
+						"settings-normal": "unpackage/res/icons/29x29.png",
+						"settings-retina": "unpackage/res/icons/58x58.png",
+						"retina8": "unpackage/res/icons/180x180.png",
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png",
+						"retina": "unpackage/res/icons/144x144.png",
+						"normal7": "unpackage/res/icons/76x76.png",
+						"retina7": "unpackage/res/icons/152x152.png",
+						"spotlight-normal": "unpackage/res/icons/50x50.png",
+						"spotlight-retina": "unpackage/res/icons/100x100.png",
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",
+						"settings-normal": "unpackage/res/icons/29x29.png",
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png",
+					"ldpi": "unpackage/res/icons/48x48.png",
+					"hdpi": "unpackage/res/icons/72x72.png",
+					"xhdpi": "unpackage/res/icons/96x96.png",
+					"xxhdpi": "unpackage/res/icons/144x144.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+
+
+						"retina40": "",
+						"retina47": "",
+						"retina55": "",
+						"retina55l": ""
+					},
+					"ipad": {
+						"portrait": "",
+						"portrait-retina": "",
+						"landscape": "",
+						"landscape-retina": "",
+						"portrait7": "",
+						"portrait-retina7": "",
+						"landscape7": "",
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "",
+					"ldpi": "images/ic_start_320x480.png",
+					"hdpi": "images/ic_start.png",
+					"xhdpi": "images/ic_start.png",
+					"xxhdpi": "images/ic_start.png"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"images/ic_yx_bdlc_highlight.png",
+					"images/ic_yx_plan_highlight.png",
+					"images/ic_yx_articles_highlight.png",
+					"images/place.png",
+					"images/ic_yx_wdewm_highlight.png",
+					"images/icon_bg1.png",
+					"images/home_btn_home_highlight.png",
+					"js/jquery-2.1.4.min.js",
+					"images/home_btn_contacts.png",
+					"css/basic.css",
+					"images/home_btn_mine.png",
+					"images/university_dynamic.gif",
+					"images/ic_yx_personal_highlight.png",
+					"images/ic_yx_clothes_highlight.png",
+					"images/60x60.gif",
+					"images/ic_yx_phone_highlight.png",
+					"js/swipe.js",
+					"js/content_width.js",
+					"images/ic_yx_bdxz_highlight.png",
+					"images/home_btn_news.png",
+					"message.html",
+					"images/home_btn_news_highlight.png",
+					"js/echo.min.js",
+					"js/public.js",
+					"images/load.png",
+					"personal_information.html",
+					"mobile_phone.html",
+					"military_reservation.html",
+					"school_plan.html",
+					"my.html",
+					"my_code.html",
+					"news.html",
+					"reporting_process.html",
+					"student_orientation.html",
+					"Articles_daily.html",
+					"contact.html",
+					"images/index_wdkc.png",
+					"images/index_kqqd.png",
+					"images/index_xsyx.png",
+					"images/index_qyzp.png",
+					"images/index_sshd.png",
+					"images/index_jwxt.png",
+					"images/index_ykt.png",
+					"images/index_oa.png",
+					"images/index_zsjy.png",
+					"images/index_hqfw.png",
+					"mui/mui.min.js",
+					"images/loading.gif"
+				],
+				"refer": [
+					"student_orientation1.html",
+					"realservice/index-service.html",
+					"login.html",
+					"educational/edu_index.html"
+				],
+				"priority": 0
+			},
+			"message.html": {
+				"resources": [
+					"index.html",
+					"js/message.js",
+					"images/home_btn_news_highlight.png",
+					"images/home_btn_mine.png",
+					"css/basic.css",
+					"images/home_btn_home.png",
+					"js/public.js",
+					"images/home_btn_contacts.png",
+					"js/jquery-2.1.4.min.js",
+					"news.html",
+					"contact.html",
+					"mui/mui.min.js",
+					"images/loading.gif"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"contact.html": {
+				"resources": [
+					"images/home_btn_contacts_highlight.png",
+					"images/home_btn_home.png",
+					"js/jquery.listnav.min-2.1.js",
+					"js/jquery.charfirst.pinyin.js",
+					"images/Contact_phone.png",
+					"js/contact.js",
+					"images/home_btn_mine.png",
+					"css/basic.css",
+					"js/public.js",
+					"js/jquery-2.1.4.min.js",
+					"images/home_btn_news.png",
+					"index.html",
+					"my.html",
+					"images/loading.gif",
+					"message.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"personal_information.html": {
+				"resources": [
+					"images/radio_botton1.png",
+					"images/home_btn_home.png",
+					"js/zepto.min.js",
+					"js/personal_information.js",
+					"images/wrap_header_jt.png",
+					"images/home_btn_mine.png",
+					"css/basic.css",
+					"js/public.js",
+					"images/home_btn_contacts.png",
+					"images/home_btn_news.png",
+					"index.html",
+					"css/mobiscroll_date.css",
+					"js/mobiscroll_date.js",
+					"js/jquery-3.1.0.min.js",
+					"mui/mui.picker.min.css",
+					"mui/mui.picker.min.js",
+					"mui/mui.min.js",
+					"js/jquery-2.1.4.min.js",
+					"images/loading.gif"
+				],
+				"refer": [
+					"my.html"
+				],
+				"priority": 0
+			},
+			"my.html": {
+				"resources": [
+					"images/home_btn_mine_highlight.png",
+					"js/my.js",
+					"login.html",
+					"images/home_btn_home.png",
+					"index.html",
+					"js/jquery-2.1.4.min.js",
+					"images/school_plan1.png",
+					"about.html",
+					"change_password.html",
+					"images/home_btn_contacts.png",
+					"css/basic.css",
+					"js/public.js",
+					"mui/mui.min.js",
+					"images/home_btn_news.png",
+					"images/loading.gif"
+				],
+				"refer": [
+					"message.html",
+					"contact.html"
+				],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [
+					"images/logo.png",
+					"images/OWeud21mRp.png",
+					"images/icon_02.png",
+					"js/login.js",
+					"images/icon_01.png",
+					"index.html",
+					"css/basic.css",
+					"images/loading.gif",
+					"js/public.js",
+					"mui/mui.min.js",
+					"images/wrap_header_jt.png",
+					"js/jquery-2.1.4.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"reporting_process.html": {
+				"resources": [
+					"images/reporting_process3.png",
+					"images/reporting_process1.png",
+					"js/reporting_process.js",
+					"images/reporting_process6.png",
+					"images/reporting_process5.png",
+					"images/reporting_process4.png",
+					"images/reporting_process7.png",
+					"images/reporting_process2.png",
+					"index.html",
+					"images/reporting.png",
+					"js/zepto.min.js",
+					"images/wrap_header_jt.png",
+					"css/basic.css",
+					"js/public.js",
+					"mui/mui.min.js",
+					"images/loading.gif"
+				],
+				"refer": [
+					"mobile_phone.html"
+				],
+				"priority": 0
+			},
+			"military_reservation.html": {
+				"resources": [
+					"images/school_plan1.png",
+					"js/military_reservation.js",
+					"images/radio_botton1.png",
+					"js/zepto.min.js",
+					"images/wrap_header_jt.png",
+					"index.html",
+					"css/basic.css",
+					"js/public.js",
+					"js/jquery-3.1.0.min.js",
+					"images/loading.gif",
+					"mui/mui.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mobile_phone.html": {
+				"resources": [
+					"js/mobile_phone.js",
+					"images/radio_botton1.png",
+					"images/wrap_header_jt.png",
+					"css/basic.css",
+					"js/public.js",
+					"js/jquery-2.1.4.min.js",
+					"index.html",
+					"student_orientation.html",
+					"mui/mui.min.js",
+					"images/loading.gif"
+				],
+				"refer": [
+					"operator.html"
+				],
+				"priority": 0
+			},
+			"Articles_daily.html": {
+				"resources": [
+					"js/Articles_daily.js",
+					"index.html",
+					"images/radio_botton1.png",
+					"js/zepto.min.js",
+					"images/wrap_header_jt.png",
+					"css/basic.css",
+					"images/loading.gif",
+					"js/public.js",
+					"mui/mui.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"school_plan.html": {
+				"resources": [
+					"js/school_plan.js",
+					"images/school_plan1.png",
+					"images/radio_botton1.png",
+					"js/zepto.min.js",
+					"images/wrap_header_jt.png",
+					"css/basic.css",
+					"js/public.js",
+					"index.html",
+					"mui/mui.min.css",
+					"mui/mui.picker.min.css",
+					"mui/mui.min.js",
+					"mui/mui.picker.min.js",
+					"images/loading.gif"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"my_code.html": {
+				"resources": [
+					"js/my_code.js",
+					"js/my_code_ewm.js",
+					"images/qr_div_co.png",
+					"css/basic.css",
+					"js/public.js",
+					"images/wrap_header_jt.png",
+					"js/jquery-2.1.4.min.js",
+					"index.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"news.html": {
+				"resources": [
+					"index.html",
+					"js/news.js",
+					"message.html",
+					"css/basic.css",
+					"js/public.js",
+					"images/wrap_header_jt.png",
+					"js/jquery-2.1.4.min.js",
+					"mui/mui.min.js",
+					"images/loading.gif"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"student_orientation.html": {
+				"resources": [
+					"images/xsyd_hkqy.png",
+					"js/student_orientation.js",
+					"images/xsyd_jtlx.png",
+					"images/xsyd_czjd.png",
+					"index.html",
+					"images/school_plan1.png",
+					"css/basic.css",
+					"js/public.js",
+					"images/wrap_header_jt.png",
+					"js/jquery-2.1.4.min.js",
+					"images/home_btn_mine.png",
+					"student_orientation1.html",
+					"images/home_btn_home.png",
+					"images/home_btn_contacts.png",
+					"images/home_btn_news.png",
+					"images/ic_yx_plan_highlight.png",
+					"images/ic_yx_bdlc_highlight.png",
+					"images/ic_yx_articles_highlight.png",
+					"images/ic_yx_wdewm_highlight.png",
+					"images/ic_yx_xscx.png",
+					"images/ic_yx_xstj.png",
+					"images/ic_yx_personal_highlight.png",
+					"images/ic_yx_clothes_highlight.png",
+					"images/ic_yx_phone_highlight.png",
+					"new_query.html",
+					"new_statistics.html",
+					"scan.html",
+					"mui/mui.min.js",
+					"mobile_phone.html",
+					"images/ic_yx_smewm.png",
+					"images/loading.gif",
+					"js/common.js"
+				],
+				"refer": [
+					"personal_information.html",
+					"military_reservation.html",
+					"reporting_process.html",
+					"my_code.html",
+					"articles_daily.html",
+					"school_plan.html",
+					"Articles_daily.html"
+				],
+				"priority": 0
+			},
+			"student_orientation1.html": {
+				"resources": [
+					"images/home_btn_home.png",
+					"js/student_orientation1.js",
+					"images/home_btn_mine.png",
+					"css/basic.css",
+					"js/public.js",
+					"mui/mui.min.js",
+					"images/wrap_header_jt.png",
+					"images/home_btn_contacts.png",
+					"js/jquery-2.1.4.min.js",
+					"images/home_btn_news.png",
+					"images/loading.gif"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"new_query.html": {
+				"resources": [
+					"js/new_query.js",
+					"images/Contact_phone.png",
+					"student_orientation.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"new_statistics.html": {
+				"resources": [
+					"images/reporting_process3.png",
+					"images/reporting_process1.png",
+					"student_orientation.html",
+					"images/home_btn_home.png",
+					"js/new_statistics.js",
+					"images/reporting_process5.png",
+					"images/reporting_process4.png",
+					"images/reporting_process6.png",
+					"images/reporting_process7.png",
+					"images/new_statistics2.png",
+					"images/new_statistics1.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"realservice/index-service.html": {
+				"resources": [
+					"realservice/fonts/iconfont.ttf",
+					"realservice/images/hqfw_tz.png",
+					"realservice/images/hqfw_ck.png",
+					"realservice/js/mui.min.js",
+					"realservice/images/hqfw_dd.png",
+					"realservice/fonts/mui.ttf",
+					"realservice/images/hqfw_pc.png",
+					"realservice/css/iconfont.css",
+					"realservice/css/mui.min.css",
+					"realservice/js/index.js",
+					"images/ads3.png",
+					"images/ads2.png",
+					"index.html",
+					"images/ads1.png",
+					"css/basic.css"
+				],
+				"refer": [
+					"realservice/service-order.html"
+				],
+				"priority": 0
+			},
+			"about.html": {
+				"resources": [
+					"my.html",
+					"manifest.json",
+					"css/basic.css",
+					"js/public.js",
+					"images/wrap_header_jt.png",
+					"js/jquery-2.1.4.min.js",
+					"mui/mui.min.js",
+					"images/loading.gif"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"change_password.html": {
+				"resources": [
+					"my.html",
+					"images/icon_02.png",
+					"js/change_password.js",
+					"images/wrap_header_jt.png",
+					"css/basic.css",
+					"js/public.js",
+					"js/jquery-2.1.4.min.js",
+					"mui/mui.min.js",
+					"images/loading.gif"
+				],
+				"refer": [
+					"login.html"
+				],
+				"priority": 0
+			},
+			"articles_daily.html": {
+				"resources": [
+					"css/basic.css",
+					"images/radio_botton1.png",
+					"js/articles_daily.js",
+					"js/zepto.min.js",
+					"js/public.js",
+					"mui/mui.min.js",
+					"images/wrap_header_jt.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"operator.html": {
+				"resources": [
+					"js/operator.js",
+					"css/basic.css",
+					"js/public.js",
+					"mui/mui.min.js",
+					"images/wrap_header_jt.png",
+					"js/jquery-2.1.4.min.js",
+					"mui/immersed.js",
+					"images/loading.gif"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"educational/edu_index.html": {
+				"resources": [
+					"educational/images/load.png",
+					"educational/js/edu_index.js",
+					"educational/js/zepto.min.js",
+					"educational/images/index-nav.png",
+					"educational/js/public.js",
+					"educational/css/public.css",
+					"mui/mui.min.js",
+					"js/zepto.min.js"
+				],
+				"refer": [
+					"educational/edu_course.html",
+					"educational/test_qurey.html",
+					"educational/grade_qurey.html"
+				],
+				"priority": 0
+			},
+			"educational/edu_course.html": {
+				"resources": [
+					"educational/images/course-bg.jpg",
+					"educational/js/edu_course.js",
+					"educational/js/zepto.min.js",
+					"mui/mui.min.js",
+					"educational/js/public.js",
+					"educational/css/public.css",
+					"js/zepto.min.js",
+					"educational/js/edu_course_data.js"
+				],
+				"refer": [
+					"educational/class_info.html"
+				],
+				"priority": 0
+			},
+			"educational/class_info.html": {
+				"resources": [
+					"educational/js/class_info.js",
+					"educational/js/zepto.min.js",
+					"mui/mui.min.js",
+					"educational/js/public.js",
+					"educational/css/public.css",
+					"images/qr_div_co.png",
+					"js/zepto.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"educational/test_qurey.html": {
+				"resources": [
+					"educational/js/test_qurey.js",
+					"images/qr_div_co.png",
+					"educational/js/zepto.min.js",
+					"mui/mui.min.js",
+					"educational/js/public.js",
+					"educational/css/public.css",
+					"js/zepto.min.js",
+					"educational/js/test_qurey_data.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"educational/grade_qurey.html": {
+				"resources": [
+					"educational/js/grade_qurey.js",
+					"images/qr_div_co.png",
+					"js/zepto.min.js",
+					"mui/mui.min.js",
+					"educational/js/public.js",
+					"educational/css/public.css",
+					"educational/js/grade_qurey_data.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"scan.html": {
+				"resources": [
+					"css/basic.css",
+					"js/common.js",
+					"images/loading.gif",
+					"js/public.js",
+					"images/wrap_header_jt.png",
+					"js/jquery-2.1.4.min.js",
+					"mui/mui.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"realservice/service-order.html": {
+				"resources": [
+					"realservice/images/yicha.jpg",
+					"realservice/images/tuoba.png",
+					"realservice/images/saozhou.jpg",
+					"realservice/images/gaijiaofan.jpg",
+					"realservice/js/juicer-min.js",
+					"realservice/images/yizi.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/skipRegister.js",
+				"js/register.js"
+			]
+		}
+	},
+	"unpackage":[
+	  "js/register.js",
+	  "js/skipRegister.js"
+	]
+}

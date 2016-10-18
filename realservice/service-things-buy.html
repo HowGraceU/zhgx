@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="js/juicer-min.js" type="text/javascript" charset="utf-8"></script>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+
+		<style>
+			.mui-row.mui-fullscreen>[class*="mui-col-"] {
+				height: 80%;
+			}
+			
+			.mui-col-xs-3,
+			.mui-col-xs-9 {
+				overflow-y: auto;
+				height: 100%;
+			}
+			
+			.mui-segmented-control .mui-control-item {
+				line-height: 50px;
+				width: 100%;
+			}
+			
+			.mui-control-content {
+				display: block;
+			}
+			
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				background-color: #fff;
+			}
+			
+			.mui-numbox {
+				height: 20px;
+				width: 120px;
+			}
+			
+			.mui-btn-numbox-minus {
+				width: 20px;
+			}
+			
+			header.mui-bar {
+				background-color: #009FFF;
+			}
+			
+			header>a,
+			h1.mui-title {
+				color: #FFFFFF;
+			}
+			
+			.mui-table-view-cell,
+			.mui-table-view-cell:active {
+				background-color: #FAFAFA;
+			}
+			.thingid{display: none;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">物品申购</h1>
+		</header>
+	
+			<div class="mui-content mui-row mui-fullscreen" style="margin-top: 10px;">
+				<div class="mui-col-xs-3">
+					<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+						<a class="mui-control-item" data-index="0" href="#content1">宿舍用品</a>
+						<a class="mui-control-item" data-index="1" href="#content2">生活用品</a>
+						<a class="mui-control-item" data-index="2" href="#content3">电子产品</a>
+					</div>
+				</div>
+			<div id="segmentedControlContents" class="mui-col-xs-9" style="border-left: 1px solid #c8c7cc;margin-bottom: 20px;">
+				<div id="content1" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/saozhou.jpg">
+								<div class="mui-media-body">
+									扫帚
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>	
+							<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/boji.png">
+								<div class="mui-media-body">
+									垃圾桶
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/tuoba.png">
+								<div class="mui-media-body">
+									拖把
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yicha.jpg">
+								<div class="mui-media-body">
+									衣叉
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+
+					</ul>
+				</div>
+				<div id="content2" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/saozhou.jpg">
+								<div class="mui-media-body">
+									扫帚
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/boji.png">
+								<div class="mui-media-body">
+									垃圾桶
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/tuoba.png">
+								<div class="mui-media-body">
+									拖把
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yicha.jpg">
+								<div class="mui-media-body">
+									衣叉
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+								</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+
+					</ul>
+				</div>
+				<div id="content3" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/saozhou.jpg">
+								<div class="mui-media-body">
+									扫帚
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/boji.png">
+								<div class="mui-media-body">
+									垃圾桶
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/tuoba.png">
+								<div class="mui-media-body">
+									拖把
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yicha.jpg">
+								<div class="mui-media-body">
+									衣叉
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<div class="mui-input-row mui-checkbox">
+								<img class="mui-media-object mui-pull-left" src="images/yizi.jpg">
+								<div class="mui-media-body">
+									椅子
+									<p class="mui-ellipsis">售价：10元</p>
+								</div>
+							</div>
+
+								<div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='1000'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							
+						</li>
+
+					</ul>
+				</div>
+			</div>
+				<div class="mui-button-row" style="padding: 5px;;background-color: #FFFFFF;float: left;width: 100%;">
+					<div style="float: left;margin: 10px;color: #8F8F94;">
+						合计：<span style="color: #EC971F;font-style:oblique;" id="number">0</span> 元
+					</div>
+					<button id="toastBtn" type="button" class="mui-btn mui-btn-warning " style="float: right;margin:5px;">确定下单</button>
+				</div>
+			</div>
+	
+		<script src="js/mui.min.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+	
+		
+				
+				mui('.mui-numbox').numbox();
+				mui(".mui-table-view").off("tap","li");
+				var p = document.getElementsByTagName("p");
+				var input = document.getElementsByTagName("input");
+				var button = document.getElementsByTagName("button");
+				var number = 0;
+				for(var i = 0; i < button.length - 1; i++) {
+					button[i].addEventListener("tap", function() {
+						for(var i = 0; i < p.length; i++) {
+							number = number + p[i].innerHTML.replace(/[^0-9]/ig, "") * input[i].value;
+						};
+
+						document.getElementById("number").innerHTML = number;
+						number = 0;
+					});
+				};
+
+				mui.init({});
+				var controls = document.getElementById("segmentedControls");
+				var contents = document.getElementById("segmentedControlContents");
+
+				//默认选中第一个
+				controls.querySelector('.mui-control-item').classList.add('mui-active');
+				//			contents.querySelector('.mui-control-content').classList.add('mui-active');
+				(function() {
+					var controlsElem = document.getElementById("segmentedControls");
+					var contentsElem = document.getElementById("segmentedControlContents");
+					var controlListElem = controlsElem.querySelectorAll('.mui-control-item');
+					var contentListElem = contentsElem.querySelectorAll('.mui-control-content');
+					var controlWrapperElem = controlsElem.parentNode;
+					var controlWrapperHeight = controlWrapperElem.offsetHeight;
+					var controlMaxScroll = controlWrapperElem.scrollHeight - controlWrapperHeight; //左侧类别最大可滚动高度
+					var maxScroll = contentsElem.scrollHeight - contentsElem.offsetHeight; //右侧内容最大可滚动高度
+					var controlHeight = controlListElem[0].offsetHeight; //左侧类别每一项的高度
+					var controlTops = []; //存储control的scrollTop值
+					var contentTops = [0]; //存储content的scrollTop值
+					var length = contentListElem.length;
+					for(var i = 0; i < length; i++) {
+						controlTops.push(controlListElem[i].offsetTop + controlHeight);
+					}
+					for(var i = 1; i < length; i++) {
+						var offsetTop = contentListElem[i].offsetTop;
+						if(offsetTop + 100 >= maxScroll) {
+							var height = Math.max(offsetTop + 100 - maxScroll, 100);
+							var totalHeight = 0;
+							var heights = [];
+							for(var j = i; j < length; j++) {
+								var offsetHeight = contentListElem[j].offsetHeight;
+								totalHeight += offsetHeight;
+								heights.push(totalHeight);
+							}
+							for(var m = 0, len = heights.length; m < len; m++) {
+								contentTops.push(parseInt(maxScroll - (height - heights[m] / totalHeight * height)));
+							}
+							break;
+						} else {
+							contentTops.push(parseInt(offsetTop));
+						}
+					}
+					contentsElem.addEventListener('scroll', function() {
+						var scrollTop = contentsElem.scrollTop;
+						for(var i = 0; i < length; i++) {
+							var offsetTop = contentTops[i];
+							var offset = Math.abs(offsetTop - scrollTop);
+							//						console.log("i:"+i+",scrollTop:"+scrollTop+",offsetTop:"+offsetTop+",offset:"+offset);
+							if(scrollTop < offsetTop) {
+								if(scrollTop >= maxScroll) {
+									onScroll(length - 1);
+								} else {
+									onScroll(i - 1);
+								}
+								break;
+							} else if(offset < 20) {
+								onScroll(i);
+								break;
+							} else if(scrollTop >= maxScroll) {
+								onScroll(length - 1);
+								break;
+							}
+						}
+					});
+					var lastIndex = 0;
+					//监听content滚动
+					var onScroll = function(index) {
+						if(lastIndex !== index) {
+							lastIndex = index;
+							var lastActiveElem = controlsElem.querySelector('.mui-active');
+							lastActiveElem && (lastActiveElem.classList.remove('mui-active'));
+							var currentElem = controlsElem.querySelector('.mui-control-item:nth-child(' + (index + 1) + ')');
+							currentElem.classList.add('mui-active');
+							//简单处理左侧分类滚动，要么滚动到底，要么滚动到顶
+							var controlScrollTop = controlWrapperElem.scrollTop;
+							if(controlScrollTop + controlWrapperHeight < controlTops[index]) {
+								controlWrapperElem.scrollTop = controlMaxScroll;
+							} else if(controlScrollTop > controlTops[index] - controlHeight) {
+								controlWrapperElem.scrollTop = 0;
+							}
+						}
+					};
+					//滚动到指定content
+					var scrollTo = function(index) {
+						contentsElem.scrollTop = contentTops[index];
+					};
+					mui(controlsElem).on('tap', '.mui-control-item', function(e) {
+						scrollTo(this.getAttribute('data-index'));
+						return false;
+					});
+				})();
+				var thing = document.getElementsByClassName("mui-checkbox");
+
+				document.getElementById("toastBtn").addEventListener("tap", function() {
+					var things = [];
+
+					for(var i = 0; i < input.length; i++) {
+						if(input[i].value != 0) {
+							things.push({
+								"main": thing[i].innerHTML,
+								"number": input[i].value,
+								"price": p[i].innerHTML.replace(/[^0-9]/ig, "") * input[i].value
+							})
+						}
+					};
+
+					mui.openWindow({
+						url: "service-things-buy-pay.html",
+						id: "service-things-buy-pay.html",
+						extras: {
+							"things": things,
+							"total": document.getElementById("number").innerHTML
+						}
+					});
+				});
+		
+	
+//			mui.get(ctx + '/logistic/obj-goods/index ', function(data) {
+//				var tpl = document.getElementById("tpl").innerHTML;
+//				document.body.innerHTML = document.body.innerHTML + juicer(tpl, data);
+//				mui('.mui-numbox').numbox();
+//				mui(".mui-table-view").off("tap","li");
+//				var p = document.getElementsByTagName("p");
+//				var input = document.getElementsByTagName("input");
+//				var button = document.getElementsByTagName("button");
+//				var number = 0;
+//				for(var i = 0; i < button.length - 1; i++) {
+//					button[i].addEventListener("tap", function() {
+//						for(var i = 0; i < p.length; i++) {
+//							number = number + p[i].innerHTML.replace(/[^0-9]/ig, "") * input[i].value;
+//						};
+//
+//						document.getElementById("number").innerHTML = number;
+//						number = 0;
+//					});
+//
+//				};
+//
+//				mui.init({});
+//				var controls = document.getElementById("segmentedControls");
+//				var contents = document.getElementById("segmentedControlContents");
+//
+//				//默认选中第一个
+//				controls.querySelector('.mui-control-item').classList.add('mui-active');
+//				//			contents.querySelector('.mui-control-content').classList.add('mui-active');
+//				(function() {
+//					var controlsElem = document.getElementById("segmentedControls");
+//					var contentsElem = document.getElementById("segmentedControlContents");
+//					var controlListElem = controlsElem.querySelectorAll('.mui-control-item');
+//					var contentListElem = contentsElem.querySelectorAll('.mui-control-content');
+//					var controlWrapperElem = controlsElem.parentNode;
+//					var controlWrapperHeight = controlWrapperElem.offsetHeight;
+//					var controlMaxScroll = controlWrapperElem.scrollHeight - controlWrapperHeight; //左侧类别最大可滚动高度
+//					var maxScroll = contentsElem.scrollHeight - contentsElem.offsetHeight; //右侧内容最大可滚动高度
+//					var controlHeight = controlListElem[0].offsetHeight; //左侧类别每一项的高度
+//					var controlTops = []; //存储control的scrollTop值
+//					var contentTops = [0]; //存储content的scrollTop值
+//					var length = contentListElem.length;
+//					for(var i = 0; i < length; i++) {
+//						controlTops.push(controlListElem[i].offsetTop + controlHeight);
+//					}
+//					for(var i = 1; i < length; i++) {
+//						var offsetTop = contentListElem[i].offsetTop;
+//						if(offsetTop + 100 >= maxScroll) {
+//							var height = Math.max(offsetTop + 100 - maxScroll, 100);
+//							var totalHeight = 0;
+//							var heights = [];
+//							for(var j = i; j < length; j++) {
+//								var offsetHeight = contentListElem[j].offsetHeight;
+//								totalHeight += offsetHeight;
+//								heights.push(totalHeight);
+//							}
+//							for(var m = 0, len = heights.length; m < len; m++) {
+//								contentTops.push(parseInt(maxScroll - (height - heights[m] / totalHeight * height)));
+//							}
+//							break;
+//						} else {
+//							contentTops.push(parseInt(offsetTop));
+//						}
+//					}
+//					contentsElem.addEventListener('scroll', function() {
+//						var scrollTop = contentsElem.scrollTop;
+//						for(var i = 0; i < length; i++) {
+//							var offsetTop = contentTops[i];
+//							var offset = Math.abs(offsetTop - scrollTop);
+//							//						console.log("i:"+i+",scrollTop:"+scrollTop+",offsetTop:"+offsetTop+",offset:"+offset);
+//							if(scrollTop < offsetTop) {
+//								if(scrollTop >= maxScroll) {
+//									onScroll(length - 1);
+//								} else {
+//									onScroll(i - 1);
+//								}
+//								break;
+//							} else if(offset < 20) {
+//								onScroll(i);
+//								break;
+//							} else if(scrollTop >= maxScroll) {
+//								onScroll(length - 1);
+//								break;
+//							}
+//						}
+//					});
+//					var lastIndex = 0;
+//					//监听content滚动
+//					var onScroll = function(index) {
+//						if(lastIndex !== index) {
+//							lastIndex = index;
+//							var lastActiveElem = controlsElem.querySelector('.mui-active');
+//							lastActiveElem && (lastActiveElem.classList.remove('mui-active'));
+//							var currentElem = controlsElem.querySelector('.mui-control-item:nth-child(' + (index + 1) + ')');
+//							currentElem.classList.add('mui-active');
+//							//简单处理左侧分类滚动，要么滚动到底，要么滚动到顶
+//							var controlScrollTop = controlWrapperElem.scrollTop;
+//							if(controlScrollTop + controlWrapperHeight < controlTops[index]) {
+//								controlWrapperElem.scrollTop = controlMaxScroll;
+//							} else if(controlScrollTop > controlTops[index] - controlHeight) {
+//								controlWrapperElem.scrollTop = 0;
+//							}
+//						}
+//					};
+//					//滚动到指定content
+//					var scrollTo = function(index) {
+//						contentsElem.scrollTop = contentTops[index];
+//					};
+//					mui(controlsElem).on('tap', '.mui-control-item', function(e) {
+//						scrollTo(this.getAttribute('data-index'));
+//						return false;
+//					});
+//				})();
+//				var thing = document.getElementsByClassName("checkbox");
+//
+//				document.getElementById("toastBtn").addEventListener("tap", function() {
+//					var things = [];
+//
+//					for(var i = 0; i < input.length; i++) {
+//						if(input[i].value != 0) {
+//							things.push({
+//								"main": thing[i].innerHTML,
+//								"number": input[i].value,
+//								"price": p[i].innerHTML.replace(/[^0-9]/ig, "") * input[i].value
+//							})
+//						}
+//					};
+//
+//					mui.openWindow({
+//						url: "service-things-buy-pay.html",
+//						id: "service-things-buy-pay.html",
+//						extras: {
+//							"things": things,
+//							"total": document.getElementById("number").innerHTML
+//						}
+//					});
+//				});
+//			}, 'json');
+		</script>
+
+	</body>
+
+</html>

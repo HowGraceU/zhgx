@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<style type="text/css">
+			.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+				border-color: #D8D8D8;
+			}
+			
+			.alist {
+				border-radius: 10px;
+				background-color: #FAFAFA;
+				padding-top: 5%;
+				display: table-cell;
+				overflow: hidden;
+				text-align: center;
+				font-size: 25px;
+				color: #8A6DE9;
+				border: 1px solid #efeff4;
+				/*border-right: 1px solid #efeff4;*/
+			}
+			
+			.alist>p {
+				color: #8A6DE9;
+			}
+			
+			header.mui-bar {
+				background-color: #009FFF;
+			}
+			
+			header>a,
+			h1.mui-title {
+				color: #FFFFFF;
+			}
+			
+			div.media-body {
+				font-size: 13px;
+				line-height: 15px;
+				display: block;
+				width: 100%;
+				height: 15px;
+				margin-top: 8px;
+				text-overflow: ellipsis;
+				color: #333
+			}
+			
+			.container-fluid {
+				height: 5.5rem;
+				padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+				background: #fff;
+			}
+			
+			.index_menu {
+				line-height: 0.9rem;
+				font-size: 0.9rem;
+				text-align: center;
+			}
+			
+			.index_menu img {
+				width: 4.0rem;
+				padding: 0 0.5rem;
+				margin: 0 auto;
+			}
+			
+			.temp_gray {
+				clear: both;
+				height: 0.5rem;
+				background: #F4F4F4;
+			}
+			
+			.mui-col-xs-3{
+				float: left;
+			}
+			
+			.mui-col-lg-3,
+			.mui-col-md-3,
+			.mui-col-sm-3,
+			.mui-col-xs-3{
+				padding-right: 8px;
+				padding-left: 8px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" onclick="location.href='../index.html'"></a>
+			<h1 class="mui-title">后勤服务</h1>
+		</header>
+
+		<div class="mui-content">
+			<div class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!--支持循环，需要重复图片节点-->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#"><img src="../images/ads3.png" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="../images/ads1.png" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="../images/ads2.png" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="../images/ads3.png" /></a>
+					</div>
+					<!--支持循环，需要重复图片节点-->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#"><img src="../images/ads1.png" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div id="service-order" class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3 index_menu">
+					<img src="images/hqfw_dd.png" />订单
+				</div>
+				<div id="service-message" class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3 index_menu">
+					<img src="images/hqfw_tz.png" />通知
+				</div>
+				<div id="service-review" class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3 index_menu">
+					<img src="images/hqfw_ck.png" />查看
+				</div>
+				<div id="service-rated" class="mui-col-lg-3 mui-col-md-3 mui-col-sm-3 mui-col-xs-3 index_menu">
+					<img src="images/hqfw_pc.png" />评测
+				</div>
+			</div>
+			<div class="temp_gray"></div>
+
+			<ul class="mui-table-view mui-grid-view mui-grid-90" id="grid">
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #FF5053;">
+					<a id="service-food-buy">
+						<span class="mui-icon iconfont icon-unie65b"></span>
+						<div class="media-body">阳光食堂</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #EC971F;">
+					<a id="service-things-buy">
+						<span class="mui-icon iconfont icon-unie6b92"></span>
+						<div class="media-body">物品申购</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #FFB400">
+					<a id="service-electricity">
+						<span class="mui-icon iconfont icon-shuidianmei"></span>
+						<div class="media-body">水电查询</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #2AC845;">
+					<a id="service-repair-list">
+						<span class="mui-icon iconfont icon-shape11"></span>
+						<div class="media-body">报修系统</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #007AFF;">
+					<a id="service-bed">
+						<span class="mui-icon iconfont icon-chuang"></span>
+						<div class="media-body">床位调换</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #8A6DE9;">
+					<a id="service-yanchi">
+						<span class="mui-icon iconfont icon-yanshi"></span>
+						<div class="media-body">延迟退宿</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #FF5053;">
+					<a id="service-complaints">
+						<span class="mui-icon iconfont icon-07"></span>
+						<div class="media-body">投诉上报</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #EC971F;">
+					<a id="service-information">
+						<span class="mui-icon iconfont icon-untitled41"></span>
+						<div class="media-body">个人信息</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #2AC845">
+					<a id="service-attence">
+						<span class="mui-icon iconfont icon-untitled112"></span>
+						<div class="media-body">员工考勤</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #FFB400">
+					<a id="service-admin">
+						<span class="mui-icon iconfont icon-untitled18"></span>
+						<div class="media-body">宿舍管理</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #007AFF">
+					<a id="service-car">
+						<span class="mui-icon iconfont icon-chuzu"></span>
+						<div class="media-body">预约用车</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" style="color: #8A6DE9;">
+					<a id="service-stayhotel">
+						<span class="mui-icon iconfont icon-zhusu"></span>
+						<div class="media-body">临时住宿</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<script type="text/javascript">
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 2000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+
+			document.getElementById("service-order").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-order.html",
+					id: "service-order.html",
+				});
+			});
+			document.getElementById("service-message").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-message.html",
+					id: "service-message.html",
+				});
+			});
+			document.getElementById("service-review").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-review.html",
+					id: "service-review.html",
+				});
+			});
+			document.getElementById("service-rated").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-rated-list.html",
+					id: "service-rated-list.html",
+				});
+			});
+			document.getElementById("service-bed").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-bed.html",
+					id: "service-bed.html",
+				});
+			});
+			document.getElementById("service-food-buy").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-food-buy.html",
+					id: "service-food-buy.html",
+				});
+			});
+			document.getElementById("service-electricity").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-electricity.html",
+					id: "service-electricity.html",
+				});
+			});
+			document.getElementById("service-repair-list").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-repair-list.html",
+					id: "service-repair-list.html",
+				});
+			});
+			document.getElementById("service-attence").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-attence.html",
+					id: "service-attence.html",
+				});
+			});
+			document.getElementById("service-car").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-car.html",
+					id: "service-car.html",
+				});
+			});
+			document.getElementById("service-stayhotel").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-stayhotel.html",
+					id: "service-stayhotel.html",
+				});
+			});
+			document.getElementById("service-things-buy").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-things-buy.html",
+					id: "service-things-buy.html",
+				});
+			});
+			document.getElementById("service-complaints").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-complaints.html",
+					id: "service-complaints.html",
+				});
+			});
+			document.getElementById("service-admin").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-admin.html",
+					id: "service-admin.html",
+				});
+			});
+			document.getElementById("service-yanchi").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-yanchi.html",
+					id: "service-yanchi.html",
+				});
+			});
+			document.getElementById("service-information").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "service-information.html",
+					id: "service-information.html",
+				});
+			});
+		</script>
+
+	</body>
+
+</html>
